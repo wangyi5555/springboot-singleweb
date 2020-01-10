@@ -1,0 +1,3 @@
+logging:
+  level:
+   com.wangyi.web.dao: debug

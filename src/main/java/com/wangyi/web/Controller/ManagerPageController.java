@@ -1,5 +1,7 @@
 package com.wangyi.web.Controller;
 
+import com.wangyi.web.service.user.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +16,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/manager")
 public class ManagerPageController {
+    @Autowired
+    private UserService userService;
     /*
      * @Author Wrysunny
      * @Description //TODO 负责管理页面的首页初始化
@@ -22,7 +26,13 @@ public class ManagerPageController {
      * @return java.lang.String
      **/
     @GetMapping("/index")
-    public String managerIndex(){
+    public String managerIndexPage(){
+        userService.selAllUser();
         return "manager/index";
+    }
+
+    @GetMapping("/user")
+    public String userPage(){
+        return "manager/manage-user";
     }
 }
