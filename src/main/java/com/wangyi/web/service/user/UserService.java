@@ -6,11 +6,16 @@ import java.util.List;
 
 /**
  * @ClassName UserService
- * @Description TODO
+ * @Description TODO 用户服务的接口
  * @Author Wrysunny
  * @Date 2020/1/1023:53
  * @Version 1.0
  **/
 public interface UserService {
-    List<User> selAllUser();
+    List<User> selAllUser(int pageNum);
+    User selUserByID(User user);
+    int saveUser(User user);
+    int delUser(int id);
+
+    int delbyList(Integer[] list);
 }

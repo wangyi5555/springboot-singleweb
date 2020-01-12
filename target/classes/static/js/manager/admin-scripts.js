@@ -7,6 +7,9 @@
 (function () {
     $('img').attr('draggable', 'false');
     $('a').attr('draggable', 'false');
+    $(".disabled").click(function () {
+        return false;
+    });
 })();
  
 //设置Cookie

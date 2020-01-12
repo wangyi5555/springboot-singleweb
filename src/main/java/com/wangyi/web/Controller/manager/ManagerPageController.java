@@ -1,5 +1,7 @@
-package com.wangyi.web.Controller;
+package com.wangyi.web.Controller.manager;
 
+import com.github.pagehelper.PageInfo;
+import com.wangyi.web.pojo.User;
 import com.wangyi.web.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,23 +18,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/manager")
 public class ManagerPageController {
-    @Autowired
-    private UserService userService;
+
     /*
      * @Author Wrysunny
-     * @Description //TODO 负责管理页面的首页初始化
-     * @Date 21:57 2020/1/10
+     * @Description //TODO 管理页面的首页
+     * @Date 12:16 2020/1/11
      * @Param []
      * @return java.lang.String
      **/
     @GetMapping("/index")
     public String managerIndexPage(){
-        userService.selAllUser();
         return "manager/index";
     }
 
-    @GetMapping("/user")
-    public String userPage(){
-        return "manager/manage-user";
+
+
+    @GetMapping("/article")
+    public String articlePage(){
+        return "manager/article";
     }
 }

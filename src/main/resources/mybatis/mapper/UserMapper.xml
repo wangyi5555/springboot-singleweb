@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--mapper的dtd  -->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangyi.web.dao.UserMapper">
+    <resultMap id="user" type="User">
+        <id property="id" column="u_id"/>
+        <result property="username" column="u_username"/>
+        <result property="name" column="u_name"/>
+        <result property="password" column="u_password"/>
+        <result property="phone" column="u_phone"/>
+        <result property="isActive" column="u_isactive"/>
+    </resultMap>
+
+
+    <select id="selUser" resultMap="user">
+        select *
+        from tb_user
+        <where>
+            <trim prefixOverrides="and" suffixOverrides=",">
+                <if test="id != null">
+                    and u_id = #{id},
+                </if>
+            </trim>
+        </where>
+    </select>
+
+
+    <insert id="insUser">
+        insert
+        into tb_user (`u_username`,`u_name`,`u_password`,`u_phone`)
+        value (#{username},#{name},#{password},#{phone})
+    </insert>
+
+    <update id="updUser">
+        update tb_user
+        set
+        <choose>
+            <when test="isActive!=null">
+                `u_isactive`=#{isActive}
+            </when>
+            <otherwise>
+                `u_username`=#{username},
+                `u_name`=#{name},
+                `u_password`=#{password},
+                `u_phone`=#{phone}
+            </otherwise>
+        </choose>
+        where `u_id`=#{id}
+    </update>
+
+    <delete id="delUser">
+        delete
+        from tb_user
+        where u_id = #{id}
+    </delete>
+</mapper>

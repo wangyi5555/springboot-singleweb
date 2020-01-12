@@ -1,4 +1,4 @@
-package com.wangyi.web.Controller;
+package com.wangyi.web.Controller.webpage;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

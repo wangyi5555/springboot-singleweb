@@ -26,3 +26,15 @@ spring:
 mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
   config-location: classpath:mybatis/mybatis-config.xml
+  type-aliases-package: com.wangyi.web.pojo
+
+
+
+#pagehelper:
+#  offset-as-page-num: true
+#  row-bounds-with-count: true
+#  page-size-zero: true
+#  reasonable: false
+#  params: pageNum=pageHelperStart;pageSize=pageHelperRows
+#  support-methods-arguments: false
+
