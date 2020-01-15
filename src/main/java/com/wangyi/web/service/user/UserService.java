@@ -13,9 +13,9 @@ import java.util.List;
  **/
 public interface UserService {
     List<User> selAllUser(int pageNum);
+    User selUserWithLog(User user);
     User selUserByID(User user);
     int saveUser(User user);
     int delUser(int id);
-
     int delbyList(Integer[] list);
 }

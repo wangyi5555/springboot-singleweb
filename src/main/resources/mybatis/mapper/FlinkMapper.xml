@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--mapper的dtd  -->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangyi.web.dao.FlinkMapper">
+    <resultMap id="flink" type="Flink">
+        <id property="id" column="f_id"/>
+        <result property="name" column="f_name"/>
+        <result property="url" column="f_url"/>
+        <result property="imgurl" column="f_imgurl"/>
+        <result property="description" column="f_description"/>
+        <result property="target" column="f_target"/>
+        <result property="rel" column="f_rel"/>
+        <result property="lastDate" column="f_lastDate"/>
+    </resultMap>
+    <select id="selFlink" resultMap="flink">
+        select *
+        from tb_flink
+        <where>
+            <trim prefixOverrides="and" suffixOverrides=",">
+                <if test="id!=null">
+                    and f_id = #{id},
+                </if>
+            </trim>
+        </where>
+    </select>
+    <insert id="insFlink">
+        insert
+        into tb_flink(`f_name`, `f_url`, `f_imgurl`, `f_description`, `f_target`, `f_rel`, `f_lastDate`)
+        values(#{name},#{url},#{imgurl},#{description},#{target},#{rel},#{lastDate})
+    </insert>
+    <update id="updFlink">
+        update tb_flink
+        set `f_name`=#{name},
+            `f_url`=#{url},
+            `f_imgurl`=#{imgurl},
+            `f_description`=#{description},
+            `f_target`=#{target},
+            `f_rel`=#{rel},
+            `f_lastDate`=#{lastDate}
+        where `f_id`= #{id}
+    </update>
+    <delete id="delFlink">
+        delete
+        from tb_flink
+        where f_id = #{id}
+    </delete>
+</mapper>

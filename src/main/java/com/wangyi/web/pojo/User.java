@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 /**
  * @ClassName User
  * @Description TODO
@@ -26,4 +28,6 @@ public class User {
     private String phone;
 //    用户是否激活：0 1
     private Integer isActive;
+
+    private List<LoginLog> loginLog;
 }

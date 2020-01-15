@@ -12,6 +12,13 @@
         <result property="password" column="u_password"/>
         <result property="phone" column="u_phone"/>
         <result property="isActive" column="u_isactive"/>
+        <collection property="loginLog" ofType="LoginLog">
+            <id property="id" column="l_id"/>
+            <result property="userid" column="l_userid"/>
+            <result property="lasttime" column="l_lasttime"/>
+            <result property="ip" column="l_ip"/>
+            <result property="status" column="l_status"/>
+        </collection>
     </resultMap>
 
 
@@ -22,6 +29,26 @@
             <trim prefixOverrides="and" suffixOverrides=",">
                 <if test="id != null">
                     and u_id = #{id},
+                </if>
+                <if test="username != null and username !=''">
+                    and u_username = #{username},
+                </if>
+            </trim>
+        </where>
+    </select>
+
+    <select id="selUserWithLoginLog" resultMap="user">
+        select
+        u.u_id,u.u_username,u.u_name,u.u_phone,l.*
+        from tb_user u
+        left join tb_loginlog l on u.u_id = l.l_userid
+        <where>
+            <trim prefixOverrides="and" suffixOverrides=",">
+                <if test="id != null">
+                    and u_id = #{id},
+                </if>
+                <if test="username != null and username !=''">
+                    and u_username = #{username},
                 </if>
             </trim>
         </where>
@@ -37,17 +64,27 @@
     <update id="updUser">
         update tb_user
         set
-        <choose>
-            <when test="isActive!=null">
-                `u_isactive`=#{isActive}
-            </when>
-            <otherwise>
-                `u_username`=#{username},
-                `u_name`=#{name},
-                `u_password`=#{password},
-                `u_phone`=#{phone}
-            </otherwise>
-        </choose>
+        <trim suffixOverrides=",">
+            <choose>
+                <when test="isActive!=null">
+                    `u_isactive`=#{isActive},
+                </when>
+                <otherwise>
+                    <if test="username!=null and username !=''">
+                        `u_username`=#{username},
+                    </if>
+                    <if test="name!=null and name !=''">
+                        `u_name`=#{name},
+                    </if>
+                    <if test="password!=null and password !=''">
+                        `u_password`=#{password},
+                    </if>
+                    <if test="phone!=null and phone !=''">
+                        `u_phone`=#{phone},
+                    </if>
+                </otherwise>
+            </choose>
+        </trim>
         where `u_id`=#{id}
     </update>
 

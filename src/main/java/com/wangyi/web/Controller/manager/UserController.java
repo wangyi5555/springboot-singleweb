@@ -35,9 +35,8 @@ public class UserController {
      **/
     @GetMapping("/user/{pageNum}")
     public String userPage(Model model,
-                           @PathVariable(name = "pageNum") Integer pageNum,
-                           HttpServletRequest request){
-        System.out.println(request.getRequestURL());
+                           @PathVariable(name = "pageNum") Integer pageNum){
+//        System.out.println(request.getRequestURL());
         List<User> userList = userService.selAllUser(pageNum);
         PageInfo<User> pageInfo = new PageInfo<>(userList);
 //        System.out.println(pageInfo.getNextPage());
@@ -114,6 +113,13 @@ public class UserController {
         return new ResponseMessage();
     }
 
+    /*
+     * @Author Wrysunny
+     * @Description //TODO 批量删除用户数据
+     * @Date 13:31 2020/1/12
+     * @Param [checkbox]
+     * @return java.lang.String
+     **/
     @DeleteMapping("/user/delList")
     public String delList(@RequestParam(value = "checkbox[]",required = false) Integer[] checkbox) {
         userService.delbyList(checkbox);

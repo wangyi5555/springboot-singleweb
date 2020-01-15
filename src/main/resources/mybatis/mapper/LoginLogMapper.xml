@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--mapper的dtd  -->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangyi.web.dao.LoginLogMapper">
+    <resultMap id="loginLog" type="LoginLog">
+        <id property="id" column="l_id"/>
+        <result property="userid" column="l_userid"/>
+        <result property="lasttime" column="l_lasttime"/>
+        <result property="ip" column="l_ip"/>
+        <result property="status" column="l_status"/>
+        <association property="user" javaType="User">
+            <id property="id" column="u_id"/>
+            <result property="username" column="u_username"/>
+        </association>
+    </resultMap>
+    <select id="selAllLoginLog" resultMap="loginLog">
+        select l.*,u.u_username
+        from tb_loginlog l
+        left join tb_user u on l.l_userid = u.u_id
+        <where>
+            <trim prefixOverrides="and" suffixOverrides=",">
+                <if test="userid != null">
+                    and l_userid = #{userid},
+                </if>
+            </trim>
+        </where>
+        order by l_lasttime desc
+    </select>
+    <delete id="delLoginLog">
+        delete
+        from tb_loginlog
+        <where>
+            <if test="id!=null">
+                l_id = #{id};
+            </if>
+        </where>
+    </delete>
+</mapper>

@@ -1,23 +1,23 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="utf-8">
 <meta name="renderer" content="webkit">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>异清轩博客管理系统</title>
-<link rel="stylesheet" type="text/css" href="../../static/css/manager/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="../../static/css/manager/style.css">
-<link rel="stylesheet" type="text/css" href="../../static/css/manager/login.css">
-<link rel="apple-touch-icon-precomposed" href="../../static/images/manager/icon/icon.png">
-<link rel="shortcut icon" href="../../static/images/manager/icon/favicon.ico">
-<script src="../../static/js/manager/jquery-2.1.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../static/css/manager/bootstrap.min.css" th:href="@{/css/manager/bootstrap.min.css}">
+<link rel="stylesheet" type="text/css" href="../../static/css/manager/style.css" th:href="@{/css/manager/style.css}">
+<link rel="stylesheet" type="text/css" href="../../static/css/manager/login.css" th:href="@{/css/manager/login.css}">
+<link rel="apple-touch-icon-precomposed" href="../../static/images/manager/icon/icon.png" th:href="@{/images/manager/icon/icon.png}">
+<link rel="shortcut icon" href="../../static/images/manager/icon/favicon.ico" th:href="@{/images/manager/icon/favicon.ico}">
+<script src="../../static/js/manager/jquery-2.1.4.min.js" th:src="@{/js/manager/jquery-2.1.4.min.js}"></script>
 <!--[if gte IE 9]>
-  <script src="../../static/js/manager/jquery-1.11.1.min.js" type="text/javascript"></script>
-  <script src="../../static/js/manager/html5shiv.min.js" type="text/javascript"></script>
-  <script src="../../static/js/manager/respond.min.js" type="text/javascript"></script>
-  <script src="../../static/js/manager/selectivizr-min.js" type="text/javascript"></script>
-  <![endif]-->
+<script src="../../static/js/manager/jquery-1.11.1.min.js" type="text/javascript" th:src="@{/js/manager/jquery-1.11.1.min.js}"></script>
+<script src="../../static/js/manager/html5shiv.min.js" type="text/javascript" th:src="@{/js/manager/html5shiv.min.js}"></script>
+<script src="../../static/js/manager/respond.min.js" type="text/javascript" th:src="@{/js/manager/respond.min.js}"></script>
+<script src="../../static/js/manager/selectivizr-min.js" type="text/javascript" th:src="@{/js/manager/selectivizr-min.js}"></script>
+<![endif]-->
 <!--[if lt IE 9]>
   <script>window.location.href='upgrade-browser.html';</script>
 <![endif]-->
@@ -25,20 +25,20 @@
 
 <body class="user-select">
 <div class="container">
-  <div class="siteIcon"><img src="../../static/images/manager/icon/icon.png" alt="" data-toggle="tooltip" data-placement="top" title="欢迎使用异清轩博客管理系统" draggable="false" /></div>
-  <form action="index.html" method="post" autocomplete="off" class="form-signin">
+  <div class="siteIcon"><img src="../../static/images/manager/icon/icon.png" alt="" data-toggle="tooltip" data-placement="top" title="欢迎使用异清轩博客管理系统" draggable="false" th:src="@{/images/manager/icon/icon.png}"/></div>
+  <form action="index.html" method="post" autocomplete="off" class="form-signin" th:action="@{/manager/login/check}">
     <h2 class="form-signin-heading">管理员登录</h2>
     <label for="userName" class="sr-only">用户名</label>
     <input type="text" id="userName" name="username" class="form-control" placeholder="请输入用户名" required autofocus autocomplete="off" maxlength="10">
     <label for="userPwd" class="sr-only">密码</label>
-    <input type="password" id="userPwd" name="userpwd" class="form-control" placeholder="请输入密码" required autocomplete="off" maxlength="18">
+    <input type="password" id="userPwd" name="password" class="form-control" placeholder="请输入密码" required autocomplete="off" maxlength="18">
     <a href="main.html"><button class="btn btn-lg btn-primary btn-block" type="submit" id="signinSubmit">登录</button></a>
   </form>
   <div class="footer">
-    <p><a href="index.html" data-toggle="tooltip" data-placement="left" title="不知道自己在哪?">回到后台 →</a></p>
+    <p><a href="index.html" data-toggle="tooltip" data-placement="left" title="不知道自己在哪?" th:href="@{/}">回到前台 →</a></p>
   </div>
 </div>
-<script src="../../static/js/manager/bootstrap.min.js"></script>
+<script src="../../static/js/manager/bootstrap.min.js" th:src="@{/js/manager/bootstrap.min.js}"></script>
 <script>
 $('[data-toggle="tooltip"]').tooltip();
 window.oncontextmenu = function(){
@@ -56,6 +56,11 @@ $('#signinSubmit').click(function(){
 		$(this).text('请稍后...');
 	}
 });
+</script>
+<script th:if="${returnMessage!=null}">
+  $(function () {
+    window.confirm("[[${returnMessage}]]，请重试");
+  });
 </script>
 </body>
 </html>

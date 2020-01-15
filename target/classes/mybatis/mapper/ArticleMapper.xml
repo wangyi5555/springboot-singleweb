@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--mapper的dtd  -->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangyi.web.dao.ArticleMapper">
+    <resultMap id="article" type="Article">
+        <id property="id" column="a_id"/>
+        <result property="title" column="a_title"/>
+        <result property="content" column="a_content"/>
+        <result property="keywords" column="a_keywords"/>
+        <result property="description" column="a_description"/>
+        <result property="category" column="a_categoryid"/>
+        <result property="tags" column="a_tags"/>
+        <result property="titlepic" column="a_titlepic"/>
+        <result property="visibility" column="a_visibility"/>
+        <result property="lasttime" column="a_lasttime"/>
+        <association property="categorybean" javaType="Category">
+            <id property="id" column="c_id"/>
+            <result property="name" column="c_name"/>
+        </association>
+    </resultMap>
+    <select id="selArticle" resultMap="article">
+        select a.*,c.c_id,c.c_name
+        from tb_article a
+        left join tb_category c on a.a_categoryid = c.c_id
+        <where>
+            <trim prefixOverrides="and">
+                <if test="id!=null">
+                    and a_id = #{id}
+                </if>
+            </trim>
+        </where>
+    </select>
+
+    <insert id="insArticle">
+        insert
+        into `tb_article` (`a_title`, `a_content`, `a_keywords`, `a_description`, `a_categoryid`, `a_tags`, `a_titlepic`,`a_visibility`,`a_lasttime`)
+        values (#{title},#{content},#{keywords},#{description},#{category},#{tags},#{titlepic},#{visibility},#{lasttime})
+    </insert>
+
+    <update id="updArticle">
+        update tb_article
+        set
+        `a_title`=#{title},
+        `a_content`=#{content},
+        `a_keywords`=#{keywords},
+        `a_description`=#{description},
+        `a_categoryid`=#{category},
+        `a_tags`=#{tags},
+        `a_titlepic`=#{titlepic},
+        `a_visibility`=#{visibility},
+        `a_lasttime`=#{lasttime}
+        where `a_id`=#{id}
+    </update>
+
+    <delete id="delArticle">
+        delete
+        from tb_article
+        where a_id = #{id}
+    </delete>
+
+</mapper>

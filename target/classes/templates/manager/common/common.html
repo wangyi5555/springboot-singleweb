@@ -15,13 +15,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="">消息 <span class="badge">1</span></a></li>
-                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin <span class="caret"></span></a>
+                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" th:text="${session.loginuser.getUsername()}">admin <span class="caret"></span></a>
                         <ul class="dropdown-menu dropdown-menu-left">
                             <li><a title="查看或修改个人信息" data-toggle="modal" data-target="#seeUserInfo">个人信息</a></li>
                             <li><a title="查看您的登录记录" data-toggle="modal" data-target="#seeUserLoginlog">登录记录</a></li>
                         </ul>
                     </li>
-                    <li><a href="login.html" onClick="if(!confirm('是否确认退出？'))return false;">退出登录</a></li>
+                    <li><a href="login.html" onClick="if(!confirm('是否确认退出？'))return false;" th:href="@{/manager/logout}">退出登录</a></li>
                     <li><a data-toggle="modal" data-target="#WeChat">帮助</a></li>
                 </ul>
                 <form action="" method="post" class="navbar-form navbar-right" role="search">
@@ -41,27 +41,27 @@
         <li th:class="${active}=='index'?'active':''"><a href="index.html" th:href="@{/manager/index}">报告</a></li>
     </ul>
     <ul class="nav nav-sidebar">
-        <li><a href="article.html">文章</a></li>
+        <li th:class="${active}=='article'?'active':''"><a href="article.html" th:href="@{/manager/article/1}">文章</a></li>
         <li><a href="notice.html">公告</a></li>
         <li><a href="comment.html">评论</a></li>
         <li><a data-toggle="tooltip" data-placement="bottom" title="网站暂无留言功能">留言</a></li>
     </ul>
     <ul class="nav nav-sidebar">
         <li th:class="${active}=='category'?'active':''"><a href="category.html" th:href="@{/manager/category}">栏目</a></li>
-        <li><a class="dropdown-toggle" id="otherMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">其他</a>
+        <li th:class="${active =='flink'}?'active':''"><a class="dropdown-toggle" id="otherMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">其他</a>
             <ul class="dropdown-menu" aria-labelledby="otherMenu">
-                <li><a href="flink.html">友情链接</a></li>
+                <li><a href="flink.html" th:href="@{/manager/flink/1}">友情链接</a></li>
                 <li><a data-toggle="modal" data-target="#areDeveloping">访问记录</a></li>
             </ul>
         </li>
     </ul>
     <ul class="nav nav-sidebar">
-        <li th:class="${active}=='user'?'active':''"><a class="dropdown-toggle" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">用户</a>
+        <li th:class="${active =='user'|| active == 'loginlog'}?'active':''"><a class="dropdown-toggle" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">用户</a>
             <ul class="dropdown-menu" aria-labelledby="userMenu">
                 <li><a data-toggle="modal" data-target="#areDeveloping">管理用户组</a></li>
                 <li><a href="manage-user.html" th:href="@{/manager/user/1}">管理用户</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="loginlog.html">管理登录日志</a></li>
+                <li><a href="loginlog.html" th:href="@{/manager/loginlog/1}">管理登录日志</a></li>
             </ul>
         </li>
         <li><a class="dropdown-toggle" id="settingMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">设置</a>
@@ -79,7 +79,9 @@
 <!--个人信息模态框-->
 <div class="modal fade" id="seeUserInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" th:fragment="seeUserInfo">
     <div class="modal-dialog" role="document">
-        <form action="" method="post">
+        <form action="" method="post" th:action="@{/manager/user/update}">
+            <input type="hidden" name="_method" value="put"/>
+            <input type="hidden" name="id" th:value="${session.loginuser.getId()}">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -93,15 +95,15 @@
                         <tbody>
                         <tr>
                             <td wdith="20%">姓名:</td>
-                            <td width="80%"><input type="text" value="王雨" class="form-control" name="truename" maxlength="10" autocomplete="off" /></td>
+                            <td width="80%"><input type="text" value="王雨" class="form-control" name="name" maxlength="10" autocomplete="off" th:value="${session.loginuser.getName()}"/></td>
                         </tr>
                         <tr>
                             <td wdith="20%">用户名:</td>
-                            <td width="80%"><input type="text" value="admin" class="form-control" name="username" maxlength="10" autocomplete="off" /></td>
+                            <td width="80%"><input type="text" value="admin" class="form-control" name="username" maxlength="10" autocomplete="off" th:value="${session.loginuser.getUsername()}"/></td>
                         </tr>
                         <tr>
                             <td wdith="20%">电话:</td>
-                            <td width="80%"><input type="text" value="18538078281" class="form-control" name="usertel" maxlength="13" autocomplete="off" /></td>
+                            <td width="80%"><input type="text" value="18538078281" class="form-control" name="phone" maxlength="13" autocomplete="off" th:value="${session.loginuser.getPhone()}"/></td>
                         </tr>
                         <tr>
                             <td wdith="20%">旧密码:</td>
@@ -147,25 +149,10 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>::1:55570</td>
-                        <td>2016-01-08 15:50:28</td>
-                        <td>成功</td>
-                    </tr>
-                    <tr>
-                        <td>::1:64377</td>
-                        <td>2016-01-08 10:27:44</td>
-                        <td>成功</td>
-                    </tr>
-                    <tr>
-                        <td>::1:64027</td>
-                        <td>2016-01-08 10:19:25</td>
-                        <td>成功</td>
-                    </tr>
-                    <tr>
-                        <td>::1:57081</td>
-                        <td>2016-01-06 10:35:12</td>
-                        <td>成功</td>
+                    <tr th:each="loginlog:${session.loginuser.getLoginLog()}">
+                        <td th:text="${loginlog.getIp()}"></td>
+                        <td th:text="${loginlog.getLasttime()}"></td>
+                        <td th:text="${loginlog.getStatus()}==0?'失败':'成功'"></td>
                     </tr>
                     </tbody>
                 </table>

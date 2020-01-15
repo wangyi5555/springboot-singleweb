@@ -2,38 +2,793 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ebec12b-c569-4ee3-9a08-45e4107d41b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_62.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/FlinkController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/LoginLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/dao/FlinkMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/dao/LoginLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/pojo/Enum/FlikTarget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/pojo/Flink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/pojo/LoginLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/flink/FlinkService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/flink/FlinkServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/loginlog/LoginLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/loginlog/LoginlogServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/FlinkMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/LoginLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/FlinkController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/IndexController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/LoginLogController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/dao/FlinkMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/dao/LoginLogMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/pojo/Enum/FlikTarget.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/pojo/Flink.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/pojo/LoginLog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/flink/FlinkService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/flink/FlinkServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/loginlog/LoginLogServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/loginlog/LoginlogServices.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/FlinkMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/LoginLogMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/ManagerPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/ManagerPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/WebPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/webpage/WebPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/ManagerPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/dao/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/pojo/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/user/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/user/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-datasource.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-datasource.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/manager/admin-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/manager/admin-scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-ar-AR.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-ar-AR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-ar-AR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-ar-AR.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-bg-BG.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-bg-BG.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-bg-BG.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-bg-BG.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-ca-ES.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-ca-ES.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-ca-ES.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-ca-ES.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-cs-CZ.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-cs-CZ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-cs-CZ.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-cs-CZ.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-da-DK.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-da-DK.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-da-DK.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-da-DK.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-de-DE.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-de-DE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-de-DE.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-de-DE.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-es-ES.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-es-ES.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-es-ES.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-es-ES.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-es-EU.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-es-EU.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-es-EU.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-es-EU.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-fa-IR.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-fa-IR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-fa-IR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-fa-IR.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-fi-FI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-fi-FI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-fi-FI.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-fi-FI.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-fr-FR.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-fr-FR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-fr-FR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-fr-FR.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-he-IL.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-he-IL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-he-IL.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-he-IL.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-hu-HU.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-hu-HU.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-hu-HU.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-hu-HU.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-id-ID.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-id-ID.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-id-ID.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-id-ID.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-it-IT.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-it-IT.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-it-IT.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-it-IT.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-ja-JP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-ja-JP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-ja-JP.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-ja-JP.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-ko-KR.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-ko-KR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-ko-KR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-ko-KR.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-lt-LT.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-lt-LT.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-lt-LT.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-lt-LT.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-nb-NO.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-nb-NO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-nb-NO.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-nb-NO.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-nl-NL.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-nl-NL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-nl-NL.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-nl-NL.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-pl-PL.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-pl-PL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-pl-PL.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-pl-PL.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-pt-BR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-pt-BR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-pt-BR.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-pt-PT.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-pt-PT.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-pt-PT.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-pt-PT.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-ro-RO.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-ro-RO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-ro-RO.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-ro-RO.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-ru-RU.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-ru-RU.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-ru-RU.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-ru-RU.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-sk-SK.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-sk-SK.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-sk-SK.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-sk-SK.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-sl-SI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-sl-SI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-sl-SI.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-sl-SI.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-sr-RS-Latin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-sr-RS-Latin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-sr-RS-Latin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-sr-RS-Latin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-sr-RS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-sr-RS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-sr-RS.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-sr-RS.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-sv-SE.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-sv-SE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-sv-SE.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-sv-SE.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-th-TH.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-th-TH.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-th-TH.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-th-TH.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-tr-TR.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-tr-TR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-tr-TR.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-tr-TR.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-uk-UA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-uk-UA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-uk-UA.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-uk-UA.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-vi-VN.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-vi-VN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-vi-VN.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-vi-VN.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-zh-CN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-zh-CN.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-zh-CN.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-zh-TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-zh-TW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/lang/summernote-zh-TW.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/lang/summernote-zh-TW.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/summernote.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/summernote.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/summernote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/summernote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/summernote/summernote.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/summernote/summernote.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/anchor/anchor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/anchor/anchor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/attachment.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/attachment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/attachment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/attachment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/attachment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/attachment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_default.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/fileTypeImages/icon_default.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/images/alignicon.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/images/alignicon.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/images/alignicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/images/alignicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/images/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/video/images/bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/images/file-icons.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/video/images/file-icons.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/images/file-icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/video/images/file-icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/images/icons.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/video/images/icons.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/images/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/video/images/icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/images/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/video/images/image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/images/progress.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/video/images/progress.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/images/success.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/video/images/success.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/attachment/images/success.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/video/images/success.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/background/background.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/background/background.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/background/background.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/background/background.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/background/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/background/background.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/background/images/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/image/images/bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/background/images/success.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/image/images/success.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/charts/chart.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/charts/chart.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/charts/charts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/charts/charts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/charts/charts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/charts/charts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/charts/charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/charts/charts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/charts/images/charts0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/charts/images/charts0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/charts/images/charts1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/charts/images/charts1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/charts/images/charts2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/charts/images/charts2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/charts/images/charts3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/charts/images/charts3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/charts/images/charts4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/charts/images/charts4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/charts/images/charts5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/charts/images/charts5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/emotion/emotion.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/emotion/emotion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/emotion/emotion.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/emotion/emotion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/emotion/emotion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/emotion/emotion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/emotion/images/0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/emotion/images/0.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/emotion/images/bface.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/emotion/images/bface.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/emotion/images/cface.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/emotion/images/cface.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/emotion/images/fface.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/emotion/images/fface.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/emotion/images/jxface2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/emotion/images/jxface2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/emotion/images/neweditor-tab-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/neweditor-tab-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/emotion/images/tface.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/emotion/images/tface.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/emotion/images/wface.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/emotion/images/wface.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/emotion/images/yface.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/emotion/images/yface.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/gmap/gmap.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/gmap/gmap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/help/help.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/help/help.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/help/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/help/help.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/help/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/help/help.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/image/image.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/image/image.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/image/image.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/image/image.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/image/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/image/image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/image/images/alignicon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/image/images/alignicon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/image/images/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/background/images/bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/image/images/icons.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/image/images/icons.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/image/images/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/image/images/icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/image/images/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/image/images/image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/image/images/progress.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/image/images/progress.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/image/images/success.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/image/images/success.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/image/images/success.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/background/images/success.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/insertframe/insertframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/insertframe/insertframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/internal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/link/link.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/link/link.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/map/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/map/map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/map/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/map/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/music/music.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/music/music.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/music/music.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/music/music.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/music/music.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/music/music.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/preview/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/preview/preview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/scrawl/images/addimg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/scrawl/images/addimg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/scrawl/images/brush.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/scrawl/images/brush.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/scrawl/images/delimg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/scrawl/images/delimg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/scrawl/images/delimgH.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/scrawl/images/delimgH.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/scrawl/images/empty.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/scrawl/images/empty.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/scrawl/images/emptyH.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/scrawl/images/emptyH.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/scrawl/images/eraser.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/scrawl/images/eraser.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/scrawl/images/redo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/scrawl/images/redo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/scrawl/images/redoH.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/scrawl/images/redoH.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/scrawl/images/scale.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/scrawl/images/scale.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/scrawl/images/scaleH.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/scrawl/images/scaleH.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/scrawl/images/size.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/scrawl/images/size.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/scrawl/images/undo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/scrawl/images/undo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/scrawl/images/undoH.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/scrawl/images/undoH.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/scrawl/scrawl.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/scrawl/scrawl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/scrawl/scrawl.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/scrawl/scrawl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/scrawl/scrawl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/scrawl/scrawl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/searchreplace/searchreplace.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/searchreplace/searchreplace.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/searchreplace/searchreplace.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/searchreplace/searchreplace.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/snapscreen/snapscreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/snapscreen/snapscreen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/spechars/spechars.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/spechars/spechars.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/spechars/spechars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/spechars/spechars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/table/dragicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/table/dragicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/table/edittable.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/table/edittable.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/table/edittable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/table/edittable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/table/edittable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/table/edittable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/table/edittd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/table/edittd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/table/edittip.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/table/edittip.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/template/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/template/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/template/images/bg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/template/images/bg.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/template/images/pre0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/template/images/pre0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/template/images/pre1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/template/images/pre1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/template/images/pre2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/template/images/pre2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/template/images/pre3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/template/images/pre3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/template/images/pre4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/template/images/pre4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/template/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/template/template.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/template/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/template/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/template/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/template/template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/video/images/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/images/bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/video/images/center_focus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/video/images/center_focus.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/video/images/file-icons.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/images/file-icons.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/video/images/file-icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/images/file-icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/video/images/icons.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/images/icons.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/video/images/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/images/icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/video/images/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/images/image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/video/images/left_focus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/video/images/left_focus.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/video/images/none_focus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/video/images/none_focus.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/video/images/progress.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/images/progress.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/video/images/right_focus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/video/images/right_focus.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/video/images/success.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/images/success.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/video/images/success.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/attachment/images/success.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/video/video.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/video/video.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/video/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/video/video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/video/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/video/video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/webapp/webapp.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/webapp/webapp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/wordimage/fClipboard_ueditor.swf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/wordimage/fClipboard_ueditor.swf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/wordimage/imageUploader.swf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/wordimage/imageUploader.swf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/wordimage/tangram.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/wordimage/tangram.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/wordimage/wordimage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/wordimage/wordimage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/dialogs/wordimage/wordimage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/wordimage/wordimage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/en/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/en/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/en/images/addimage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/en/images/addimage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/en/images/alldeletebtnhoverskin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/en/images/alldeletebtnhoverskin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/en/images/alldeletebtnupskin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/en/images/alldeletebtnupskin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/en/images/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/en/images/background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/en/images/button.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/en/images/button.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/en/images/copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/en/images/copy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/en/images/deletedisable.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/en/images/deletedisable.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/en/images/deleteenable.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/en/images/deleteenable.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/en/images/listbackground.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/en/images/listbackground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/en/images/localimage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/en/images/localimage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/en/images/music.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/en/images/music.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/en/images/rotateleftdisable.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/en/images/rotateleftdisable.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/en/images/rotateleftenable.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/en/images/rotateleftenable.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/en/images/rotaterightdisable.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/en/images/rotaterightdisable.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/en/images/rotaterightenable.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/en/images/rotaterightenable.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/en/images/upload.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/en/images/upload.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/zh-cn/images/copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/zh-cn/images/copy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/zh-cn/images/localimage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/zh-cn/images/localimage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/zh-cn/images/music.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/zh-cn/images/music.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/zh-cn/images/upload.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/upload.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/lang/zh-cn/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/zh-cn/zh-cn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/php/Uploader.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/php/Uploader.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/php/action_crawler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/php/action_crawler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/php/action_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/php/action_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/php/action_upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/php/action_upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/php/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/php/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/php/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/php/controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/css/ueditor.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/css/ueditor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/css/ueditor.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/css/ueditor.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/dialogbase.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/dialogbase.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/anchor.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/anchor.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/arrow_down.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/arrow_down.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/arrow_up.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/arrow_up.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/button-bg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/button-bg.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/cancelbutton.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/cancelbutton.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/charts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/charts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/cursor_h.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/cursor_h.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/cursor_h.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/cursor_h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/cursor_v.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/cursor_v.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/cursor_v.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/cursor_v.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/dialog-title-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/dialog-title-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/filescan.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/filescan.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/highlighted.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/highlighted.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/icons-all.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/icons-all.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/icons.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/icons.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/loaderror.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/loaderror.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/lock.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/lock.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/neweditor-tab-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/dialogs/emotion/images/neweditor-tab-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/pagebreak.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/pagebreak.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/scale.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/scale.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/sortable.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/sortable.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/spacer.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/spacer.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/sparator_v.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/sparator_v.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/table-cell-align.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/table-cell-align.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/tangram-colorpicker.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/tangram-colorpicker.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/toolbar_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/toolbar_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/unhighlighted.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/unhighlighted.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/upload.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/lang/zh-cn/images/upload.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/videologo.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/videologo.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/word.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/word.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/default/images/wordpaste.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/default/images/wordpaste.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/themes/iframe.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/themes/iframe.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/SyntaxHighlighter/shCore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/SyntaxHighlighter/shCore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/codemirror/codemirror.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/codemirror/codemirror.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/codemirror/codemirror.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/codemirror/codemirror.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/adapters/mootools-adapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/adapters/mootools-adapter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/adapters/prototype-adapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/adapters/prototype-adapter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/adapters/standalone-framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/adapters/standalone-framework.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/highcharts-more.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/highcharts-more.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/highcharts-more.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/highcharts-more.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/highcharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/highcharts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/highcharts.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/highcharts.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/modules/annotations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/modules/annotations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/modules/annotations.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/modules/annotations.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/modules/canvas-tools.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/modules/canvas-tools.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/modules/canvas-tools.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/modules/canvas-tools.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/modules/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/modules/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/modules/data.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/modules/data.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/modules/drilldown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/modules/drilldown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/modules/drilldown.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/modules/drilldown.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/modules/exporting.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/modules/exporting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/modules/exporting.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/modules/exporting.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/modules/funnel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/modules/funnel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/modules/funnel.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/modules/funnel.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/modules/heatmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/modules/heatmap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/modules/heatmap.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/modules/heatmap.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/modules/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/modules/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/modules/map.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/modules/map.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/modules/no-data-to-display.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/modules/no-data-to-display.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/themes/dark-blue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/themes/dark-blue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/themes/dark-green.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/themes/dark-green.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/themes/gray.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/themes/gray.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/themes/grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/themes/grid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/highcharts/themes/skies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/highcharts/themes/skies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/jquery-1.10.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/jquery-1.10.2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/jquery-1.10.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/jquery-1.10.2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/jquery-1.10.2.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/jquery-1.10.2.min.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/snapscreen/UEditorSnapscreen.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/snapscreen/UEditorSnapscreen.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/video-js/font/vjs.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/video-js/font/vjs.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/video-js/font/vjs.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/video-js/font/vjs.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/video-js/font/vjs.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/video-js/font/vjs.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/video-js/font/vjs.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/video-js/font/vjs.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/video-js/video-js.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/video-js/video-js.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/video-js/video-js.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/video-js/video-js.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/video-js/video-js.swf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/video-js/video-js.swf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/video-js/video.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/video-js/video.dev.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/video-js/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/video-js/video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/webuploader/Uploader.swf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/webuploader/Uploader.swf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/webuploader/webuploader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/webuploader/webuploader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/webuploader/webuploader.custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/webuploader/webuploader.custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/webuploader/webuploader.custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/webuploader/webuploader.custom.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/webuploader/webuploader.flashonly.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/webuploader/webuploader.flashonly.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/webuploader/webuploader.flashonly.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/webuploader/webuploader.flashonly.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/webuploader/webuploader.html5only.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/webuploader/webuploader.html5only.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/webuploader/webuploader.html5only.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/webuploader/webuploader.html5only.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/webuploader/webuploader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/webuploader/webuploader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/webuploader/webuploader.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/webuploader/webuploader.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/webuploader/webuploader.withoutimage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/webuploader/webuploader.withoutimage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/zeroclipboard/ZeroClipboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/zeroclipboard/ZeroClipboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/ueditor.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/ueditor.all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/ueditor.all.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/ueditor.all.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/ueditor.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/ueditor.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/ueditor.parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/ueditor.parse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/manager/ueditor/ueditor.parse.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/ueditor/ueditor.parse.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/add-article.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/add-article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/add-category.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/add-category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/add-flink.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/add-flink.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/add-notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/add-notice.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/comment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/comment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/common/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/common/common.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/flink.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/flink.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/loginlog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/loginlog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/manage-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/manage-user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/update-category.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/update-category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/notice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/readset.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/readset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/setting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/update-article.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/update-article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/update-flink.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/update-flink.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/webpage/ie.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/webpage/ie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/webpage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/webpage/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/wangyi/web/WebApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wangyi/web/WebApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-datasource.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-datasource.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/ManagerPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/WebPageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/ManagerPageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/dao/UserMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/pojo/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/user/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/user/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/user/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/manager/admin-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/manager/admin-scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-ar-AR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-ar-AR.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-bg-BG.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-bg-BG.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-ca-ES.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-ca-ES.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-cs-CZ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-cs-CZ.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-da-DK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-da-DK.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-de-DE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-de-DE.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-es-ES.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-es-ES.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-es-EU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-es-EU.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-fa-IR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-fa-IR.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-fi-FI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-fi-FI.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-fr-FR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-fr-FR.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-he-IL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-he-IL.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-hu-HU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-hu-HU.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-id-ID.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-id-ID.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-it-IT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-it-IT.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-ja-JP.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-ja-JP.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-ko-KR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-ko-KR.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-lt-LT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-lt-LT.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-nb-NO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-nb-NO.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-nl-NL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-nl-NL.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-pl-PL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-pl-PL.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-pt-BR.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-pt-PT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-pt-PT.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-ro-RO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-ro-RO.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-ru-RU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-ru-RU.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-sk-SK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-sk-SK.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-sl-SI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-sl-SI.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-sr-RS-Latin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-sr-RS-Latin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-sr-RS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-sr-RS.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-sv-SE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-sv-SE.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-th-TH.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-th-TH.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-tr-TR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-tr-TR.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-uk-UA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-uk-UA.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-vi-VN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-vi-VN.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-zh-CN.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/lang/summernote-zh-TW.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/summernote.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/summernote.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/summernote/summernote.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/anchor/anchor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/attachment.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/attachment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/images/alignicon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/images/alignicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/images/file-icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/images/file-icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/attachment/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/background/background.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/background/background.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/background/background.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/background/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/background/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/charts/chart.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/charts/charts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/charts/charts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/charts/charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/charts/images/charts0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/charts/images/charts1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/charts/images/charts2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/charts/images/charts3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/charts/images/charts4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/charts/images/charts5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/emotion/emotion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/emotion/emotion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/emotion/emotion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/emotion/images/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/emotion/images/bface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/emotion/images/cface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/emotion/images/fface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/emotion/images/jxface2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/emotion/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/emotion/images/tface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/emotion/images/wface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/emotion/images/yface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/gmap/gmap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/help/help.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/help/help.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/help/help.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/image/image.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/image/image.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/image/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/image/images/alignicon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/image/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/image/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/image/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/image/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/image/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/image/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/image/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/insertframe/insertframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/internal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/link/link.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/map/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/map/show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/music/music.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/music/music.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/music/music.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/preview/preview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/scrawl/images/addimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/scrawl/images/brush.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/scrawl/images/delimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/scrawl/images/delimgH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/scrawl/images/empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/scrawl/images/emptyH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/scrawl/images/eraser.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/scrawl/images/redo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/scrawl/images/redoH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/scrawl/images/scale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/scrawl/images/scaleH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/scrawl/images/size.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/scrawl/images/undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/scrawl/images/undoH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/scrawl/scrawl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/scrawl/scrawl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/scrawl/scrawl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/searchreplace/searchreplace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/searchreplace/searchreplace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/snapscreen/snapscreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/spechars/spechars.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/spechars/spechars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/table/dragicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/table/edittable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/table/edittable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/table/edittable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/table/edittd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/table/edittip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/template/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/template/images/bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/template/images/pre0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/template/images/pre1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/template/images/pre2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/template/images/pre3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/template/images/pre4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/template/template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/template/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/template/template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/video/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/video/images/center_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/video/images/file-icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/video/images/file-icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/video/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/video/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/video/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/video/images/left_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/video/images/none_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/video/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/video/images/right_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/video/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/video/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/video/video.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/video/video.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/video/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/webapp/webapp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/wordimage/fClipboard_ueditor.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/wordimage/imageUploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/wordimage/tangram.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/wordimage/wordimage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/dialogs/wordimage/wordimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/en/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/en/images/addimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/en/images/alldeletebtnhoverskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/en/images/alldeletebtnupskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/en/images/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/en/images/button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/en/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/en/images/deletedisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/en/images/deleteenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/en/images/listbackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/en/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/en/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/en/images/rotateleftdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/en/images/rotateleftenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/en/images/rotaterightdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/en/images/rotaterightenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/en/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/zh-cn/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/zh-cn/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/zh-cn/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/zh-cn/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/lang/zh-cn/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/php/Uploader.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/php/action_crawler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/php/action_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/php/action_upload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/php/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/php/controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/css/ueditor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/css/ueditor.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/dialogbase.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/arrow_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/arrow_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/button-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/cancelbutton.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/charts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/cursor_h.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/cursor_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/cursor_v.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/cursor_v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/dialog-title-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/filescan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/highlighted.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/icons-all.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/loaderror.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/lock.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/pagebreak.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/scale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/sortable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/sparator_v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/table-cell-align.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/tangram-colorpicker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/toolbar_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/unhighlighted.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/videologo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/word.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/default/images/wordpaste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/themes/iframe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/SyntaxHighlighter/shCore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/codemirror/codemirror.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/codemirror/codemirror.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/adapters/mootools-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/adapters/prototype-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/adapters/standalone-framework.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/highcharts-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/highcharts-more.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/highcharts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/highcharts.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/modules/annotations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/modules/annotations.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/modules/canvas-tools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/modules/canvas-tools.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/modules/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/modules/data.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/modules/drilldown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/modules/drilldown.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/modules/exporting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/modules/exporting.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/modules/funnel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/modules/funnel.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/modules/heatmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/modules/heatmap.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/modules/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/modules/map.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/modules/no-data-to-display.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/themes/dark-blue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/themes/dark-green.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/themes/gray.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/themes/grid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/highcharts/themes/skies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/jquery-1.10.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/jquery-1.10.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/jquery-1.10.2.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/snapscreen/UEditorSnapscreen.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/video-js/font/vjs.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/video-js/font/vjs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/video-js/font/vjs.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/video-js/font/vjs.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/video-js/video-js.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/video-js/video-js.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/video-js/video-js.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/video-js/video.dev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/video-js/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/webuploader/Uploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/webuploader/webuploader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/webuploader/webuploader.custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/webuploader/webuploader.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/webuploader/webuploader.flashonly.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/webuploader/webuploader.flashonly.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/webuploader/webuploader.html5only.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/webuploader/webuploader.html5only.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/webuploader/webuploader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/webuploader/webuploader.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/webuploader/webuploader.withoutimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/zeroclipboard/ZeroClipboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/ueditor.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/ueditor.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/ueditor.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/ueditor.parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/manager/ueditor/ueditor.parse.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/add-article.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/add-article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/add-category.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/add-category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/add-flink.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/add-flink.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/add-notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/add-notice.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/comment.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/comment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/common/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/common/common.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/flink.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/flink.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/loginlog.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/loginlog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/manage-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/manage-user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/update-category.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/update-category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/notice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/readset.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/readset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/setting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/update-article.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/update-article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/update-flink.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/update-flink.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/webpage/ie.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/webpage/ie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/webpage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/webpage/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/wangyi/web/WebApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/wangyi/web/WebApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web.iml" afterDir="false" />
     </list>
@@ -48,14 +803,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="Mybatis' config xml" />
         <option value="ymi file" />
-        <option value="Mybatis' s mapper xml" />
+        <option value="Mybatis' config xml" />
+        <option value="HTML File" />
         <option value="Interface" />
+        <option value="Mybatis' s mapper xml" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <toolWindowEditorPreview>false</toolWindowEditorPreview>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -95,7 +853,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -112,21 +870,39 @@
       <recent name="com.wangyi.web" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\CODE\singleweb\web\src\main\resources\static\js" />
+      <recent name="H:\CODE\singleweb\web\src\main\resources\static\lib" />
       <recent name="H:\CODE\singleweb\web\src\main\resources\templates" />
       <recent name="H:\CODE\singleweb\web\src\main\resources\static" />
-      <recent name="H:\CODE\singleweb\web\src\main\resources\static\js" />
       <recent name="H:\CODE\singleweb\web\src\main\resources\static\images" />
-      <recent name="H:\CODE\singleweb\web\src\main\resources\static\fonts" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wangyi.web.Controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\CODE\singleweb\web\src\main\resources\static" />
+      <recent name="H:\CODE\singleweb\web\src\main\resources\static\js" />
+      <recent name="H:\CODE\singleweb\web\src\main\resources\static\lib" />
       <recent name="H:\CODE\singleweb\web\src\main\resources\templates\manager\common" />
       <recent name="H:\CODE\singleweb\web\src\main\resources\static\js\webpage" />
-      <recent name="H:\CODE\singleweb\web\src\main\resources\static\images\webpage" />
-      <recent name="H:\CODE\singleweb\web\src\main\resources\static\fonts\webpage" />
-      <recent name="H:\CODE\singleweb\web\src\main\resources\static\css\webpage" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.WebApplication">
+    <configuration name="WebApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangyi.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wangyi.web" />
+      <option name="MAIN_CLASS_NAME" value="com.wangyi.web.WebApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WebApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="web" />
       <extension name="coverage">
@@ -143,6 +919,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebApplicationTests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangyi.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wangyi.web" />
+      <option name="MAIN_CLASS_NAME" value="com.wangyi.web.WebApplicationTests" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangyi.web.WebApplication" />
@@ -153,6 +945,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.WebApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.WebApplicationTests.test1" />
+        <item itemvalue="JUnit.WebApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +979,18 @@
       <workItem from="1578711555071" duration="6000" />
       <workItem from="1578711596260" duration="13916000" />
       <workItem from="1578729803669" duration="30009000" />
-      <workItem from="1578792611199" duration="6977000" />
+      <workItem from="1578792611199" duration="34036000" />
+      <workItem from="1578832114658" duration="5585000" />
+      <workItem from="1578838990224" duration="58000" />
+      <workItem from="1578899841095" duration="7646000" />
+      <workItem from="1578908117251" duration="11505000" />
+      <workItem from="1578928540169" duration="2057000" />
+      <workItem from="1578995992886" duration="405000" />
+      <workItem from="1579006768580" duration="881000" />
+      <workItem from="1579009375202" duration="9889000" />
+      <workItem from="1579076379882" duration="2222000" />
+      <workItem from="1579078786675" duration="73000" />
+      <workItem from="1579090224278" duration="11981000" />
     </task>
     <servers />
   </component>
@@ -197,146 +1002,166 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="691" y="314" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1578660122696" />
-    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1578796321814">
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1579103233385">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1578796321814" />
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1579103233385" />
     <state x="624" y="441" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1578671508621">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="624" y="441" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578671508621" />
+    <state x="734" y="365" width="479" height="321" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1578908402414">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="734" y="365" width="479" height="321" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1578908402414" />
     <state x="734" y="393" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1578671510687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="734" y="393" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1050@0.0.1920.1050" timestamp="1578671510687" />
-    <state width="1877" height="387" key="GridCell.Tab.0.bottom" timestamp="1578799550196">
+    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1578836955245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550196" />
-    <state width="1877" height="387" key="GridCell.Tab.0.center" timestamp="1578799550196">
+    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578836955245" />
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1579102285542">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550196" />
-    <state width="1877" height="387" key="GridCell.Tab.0.left" timestamp="1578799550195">
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1579102285542" />
+    <state x="775" y="416" width="394" height="218" key="Github.CreateGistDialog" timestamp="1579090971551">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550195" />
-    <state width="1877" height="387" key="GridCell.Tab.0.right" timestamp="1578799550196">
+    <state x="775" y="416" width="394" height="218" key="Github.CreateGistDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1579090971551" />
+    <state width="1877" height="543" key="GridCell.Tab.0.bottom" timestamp="1579103157734">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550196" />
-    <state width="1877" height="387" key="GridCell.Tab.1.bottom" timestamp="1578799550196">
+    <state width="1877" height="543" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579103157734" />
+    <state width="1877" height="543" key="GridCell.Tab.0.center" timestamp="1579103157733">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550196" />
-    <state width="1877" height="387" key="GridCell.Tab.1.center" timestamp="1578799550196">
+    <state width="1877" height="543" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579103157733" />
+    <state width="1877" height="543" key="GridCell.Tab.0.left" timestamp="1579103157733">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550196" />
-    <state width="1877" height="387" key="GridCell.Tab.1.left" timestamp="1578799550196">
+    <state width="1877" height="543" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579103157733" />
+    <state width="1877" height="543" key="GridCell.Tab.0.right" timestamp="1579103157733">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550196" />
-    <state width="1877" height="387" key="GridCell.Tab.1.right" timestamp="1578799550196">
+    <state width="1877" height="543" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579103157733" />
+    <state width="1877" height="543" key="GridCell.Tab.1.bottom" timestamp="1579103157737">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550196" />
-    <state width="1877" height="387" key="GridCell.Tab.2.bottom" timestamp="1578799550196">
+    <state width="1877" height="543" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579103157737" />
+    <state width="1877" height="543" key="GridCell.Tab.1.center" timestamp="1579103157736">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.2.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550196" />
-    <state width="1877" height="387" key="GridCell.Tab.2.center" timestamp="1578799550196">
+    <state width="1877" height="543" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579103157736" />
+    <state width="1877" height="543" key="GridCell.Tab.1.left" timestamp="1579103157735">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.2.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550196" />
-    <state width="1877" height="387" key="GridCell.Tab.2.left" timestamp="1578799550196">
+    <state width="1877" height="543" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579103157735" />
+    <state width="1877" height="543" key="GridCell.Tab.1.right" timestamp="1579103157737">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.2.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550196" />
-    <state width="1877" height="387" key="GridCell.Tab.2.right" timestamp="1578799550196">
+    <state width="1877" height="543" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579103157737" />
+    <state width="1877" height="601" key="GridCell.Tab.2.bottom" timestamp="1579102129940">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550196" />
-    <state width="1877" height="387" key="GridCell.Tab.3.bottom" timestamp="1578799550197">
+    <state width="1877" height="601" key="GridCell.Tab.2.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129940" />
+    <state width="1877" height="601" key="GridCell.Tab.2.center" timestamp="1579102129939">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.3.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550197" />
-    <state width="1877" height="387" key="GridCell.Tab.3.center" timestamp="1578799550197">
+    <state width="1877" height="601" key="GridCell.Tab.2.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129939" />
+    <state width="1877" height="601" key="GridCell.Tab.2.left" timestamp="1579102129939">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.3.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550197" />
-    <state width="1877" height="387" key="GridCell.Tab.3.left" timestamp="1578799550196">
+    <state width="1877" height="601" key="GridCell.Tab.2.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129939" />
+    <state width="1877" height="601" key="GridCell.Tab.2.right" timestamp="1579102129940">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.3.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550196" />
-    <state width="1877" height="387" key="GridCell.Tab.3.right" timestamp="1578799550197">
+    <state width="1877" height="601" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129940" />
+    <state width="1877" height="601" key="GridCell.Tab.3.bottom" timestamp="1579102129940">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.3.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550197" />
-    <state width="1877" height="387" key="GridCell.Tab.4.bottom" timestamp="1578799550197">
+    <state width="1877" height="601" key="GridCell.Tab.3.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129940" />
+    <state width="1877" height="601" key="GridCell.Tab.3.center" timestamp="1579102129940">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.4.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550197" />
-    <state width="1877" height="387" key="GridCell.Tab.4.center" timestamp="1578799550197">
+    <state width="1877" height="601" key="GridCell.Tab.3.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129940" />
+    <state width="1877" height="601" key="GridCell.Tab.3.left" timestamp="1579102129940">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.4.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550197" />
-    <state width="1877" height="387" key="GridCell.Tab.4.left" timestamp="1578799550197">
+    <state width="1877" height="601" key="GridCell.Tab.3.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129940" />
+    <state width="1877" height="601" key="GridCell.Tab.3.right" timestamp="1579102129940">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.4.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550197" />
-    <state width="1877" height="387" key="GridCell.Tab.4.right" timestamp="1578799550197">
+    <state width="1877" height="601" key="GridCell.Tab.3.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129940" />
+    <state width="1877" height="601" key="GridCell.Tab.4.bottom" timestamp="1579102129941">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.4.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550197" />
-    <state width="1877" height="387" key="GridCell.Tab.5.bottom" timestamp="1578799550198">
+    <state width="1877" height="601" key="GridCell.Tab.4.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129941" />
+    <state width="1877" height="601" key="GridCell.Tab.4.center" timestamp="1579102129940">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.5.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550198" />
-    <state width="1877" height="387" key="GridCell.Tab.5.center" timestamp="1578799550197">
+    <state width="1877" height="601" key="GridCell.Tab.4.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129940" />
+    <state width="1877" height="601" key="GridCell.Tab.4.left" timestamp="1579102129940">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.5.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550197" />
-    <state width="1877" height="387" key="GridCell.Tab.5.left" timestamp="1578799550197">
+    <state width="1877" height="601" key="GridCell.Tab.4.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129940" />
+    <state width="1877" height="601" key="GridCell.Tab.4.right" timestamp="1579102129940">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.5.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550197" />
-    <state width="1877" height="387" key="GridCell.Tab.5.right" timestamp="1578799550198">
+    <state width="1877" height="601" key="GridCell.Tab.4.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129940" />
+    <state width="1877" height="601" key="GridCell.Tab.5.bottom" timestamp="1579102129941">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.5.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550198" />
-    <state width="1877" height="387" key="GridCell.Tab.6.bottom" timestamp="1578799550198">
+    <state width="1877" height="601" key="GridCell.Tab.5.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129941" />
+    <state width="1877" height="601" key="GridCell.Tab.5.center" timestamp="1579102129941">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.6.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550198" />
-    <state width="1877" height="387" key="GridCell.Tab.6.center" timestamp="1578799550198">
+    <state width="1877" height="601" key="GridCell.Tab.5.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129941" />
+    <state width="1877" height="601" key="GridCell.Tab.5.left" timestamp="1579102129941">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.6.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550198" />
-    <state width="1877" height="387" key="GridCell.Tab.6.left" timestamp="1578799550198">
+    <state width="1877" height="601" key="GridCell.Tab.5.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129941" />
+    <state width="1877" height="601" key="GridCell.Tab.5.right" timestamp="1579102129941">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.6.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550198" />
-    <state width="1877" height="387" key="GridCell.Tab.6.right" timestamp="1578799550198">
+    <state width="1877" height="601" key="GridCell.Tab.5.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129941" />
+    <state width="1877" height="601" key="GridCell.Tab.6.bottom" timestamp="1579102129941">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.6.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550198" />
-    <state width="1877" height="387" key="GridCell.Tab.7.bottom" timestamp="1578799550198">
+    <state width="1877" height="601" key="GridCell.Tab.6.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129941" />
+    <state width="1877" height="601" key="GridCell.Tab.6.center" timestamp="1579102129941">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.7.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550198" />
-    <state width="1877" height="387" key="GridCell.Tab.7.center" timestamp="1578799550198">
+    <state width="1877" height="601" key="GridCell.Tab.6.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129941" />
+    <state width="1877" height="601" key="GridCell.Tab.6.left" timestamp="1579102129941">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.7.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550198" />
-    <state width="1877" height="387" key="GridCell.Tab.7.left" timestamp="1578799550198">
+    <state width="1877" height="601" key="GridCell.Tab.6.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129941" />
+    <state width="1877" height="601" key="GridCell.Tab.6.right" timestamp="1579102129941">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.7.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550198" />
-    <state width="1877" height="387" key="GridCell.Tab.7.right" timestamp="1578799550198">
+    <state width="1877" height="601" key="GridCell.Tab.6.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129941" />
+    <state width="1877" height="601" key="GridCell.Tab.7.bottom" timestamp="1579102129941">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.7.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578799550198" />
+    <state width="1877" height="601" key="GridCell.Tab.7.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129941" />
+    <state width="1877" height="601" key="GridCell.Tab.7.center" timestamp="1579102129941">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="601" key="GridCell.Tab.7.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129941" />
+    <state width="1877" height="601" key="GridCell.Tab.7.left" timestamp="1579102129941">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="601" key="GridCell.Tab.7.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129941" />
+    <state width="1877" height="601" key="GridCell.Tab.7.right" timestamp="1579102129941">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="601" key="GridCell.Tab.7.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579102129941" />
+    <state x="490" y="180" key="Maven.ArtifactSearchDialog" timestamp="1579012894607">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="490" y="180" key="Maven.ArtifactSearchDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1579012894607" />
     <state x="531" y="180" key="Registry" timestamp="1578664241258">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -345,22 +1170,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1578758521692" />
-    <state x="556" y="209" width="807" height="632" key="find.popup" timestamp="1578796939524">
+    <state x="230" y="183" width="914" height="736" key="find.popup" timestamp="1579102781503">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="556" y="209" width="807" height="632" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578796939524" />
-    <state width="432" height="191" key="javadoc.popup.new" timestamp="1578799337757">
+    <state x="230" y="183" width="914" height="736" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1579102781503" />
+    <state width="462" height="161" key="javadoc.popup.new" timestamp="1579103353885">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="432" height="191" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1578799337757" />
+    <state width="462" height="161" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1579103353885" />
     <state x="334" y="223" key="new project wizard" timestamp="1578660564665">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="334" y="223" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1578660564665" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1578793554558">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1579101497699">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578793554558" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1579101497699" />
   </component>
   <component name="ideajad">
     <property name="annotate" value="false" />
