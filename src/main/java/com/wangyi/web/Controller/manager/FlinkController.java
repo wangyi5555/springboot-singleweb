@@ -2,16 +2,16 @@ package com.wangyi.web.Controller.manager;
 
 import com.github.pagehelper.PageInfo;
 import com.wangyi.web.pojo.Flink;
+import com.wangyi.web.compoment.common.ResponseMessage;
 import com.wangyi.web.pojo.User;
-import com.wangyi.web.pojo.common.ResponseMessage;
 import com.wangyi.web.service.flink.FlinkService;
-import org.apache.ibatis.annotations.Delete;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 
+import javax.servlet.http.HttpSession;
 import java.util.Date;
 import java.util.List;
 
@@ -37,13 +37,13 @@ public class FlinkController {
      **/
     @GetMapping("/flink/{pageNum}")
     public String flinkPage(@PathVariable("pageNum") Integer pageNum,
-                            Model model) {
-        if (pageNum != null) {
-            List<Flink> flinkList = flinkService.selAllFlink(pageNum);
-            PageInfo<Flink> pageInfo = new PageInfo<>(flinkList);
-            model.addAttribute("flinkList", flinkList);
-            model.addAttribute("pageInfo", pageInfo);
-        }
+                            Model model,
+                            HttpSession session) {
+        User user = (User) session.getAttribute("loginuser");
+        List<Flink> flinkList = flinkService.selAllFlink(pageNum,user);
+        PageInfo<Flink> pageInfo = new PageInfo<>(flinkList);
+        model.addAttribute("flinkList", flinkList);
+        model.addAttribute("pageInfo", pageInfo);
         return "manager/flink";
     }
 
@@ -71,7 +71,10 @@ public class FlinkController {
     }
 
     @PutMapping("/flink/update")
-    public String updateFlink(Flink flink) {
+    public String updateFlink(Flink flink,
+                              HttpSession session) {
+        User user = (User) session.getAttribute("loginuser");
+        flink.setWriterbean(user);
         flinkService.saveFlink(flink);
         return "redirect:/manager/flink/1";
     }

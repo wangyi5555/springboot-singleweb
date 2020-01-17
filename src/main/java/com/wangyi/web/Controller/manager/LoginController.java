@@ -47,9 +47,6 @@ public class LoginController {
 
         try {
             subject.login(token);
-            User user1 = userService.selUserWithLog(user);
-            System.out.println(user1);
-            session.setAttribute("loginuser", user1);
         } catch (AuthenticationException | AuthorizationException e) {
             if (e instanceof AuthenticationException) {
                 model.addAttribute("returnMessage", "账号或密码错误");

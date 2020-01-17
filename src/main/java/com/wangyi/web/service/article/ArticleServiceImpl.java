@@ -3,6 +3,7 @@ package com.wangyi.web.service.article;
 import com.github.pagehelper.PageHelper;
 import com.wangyi.web.dao.ArticleMapper;
 import com.wangyi.web.pojo.Article;
+import com.wangyi.web.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,9 +23,11 @@ public class ArticleServiceImpl implements ArticleService {
     private ArticleMapper articleMapper;
 
     @Override
-    public List<Article> selArticle(Integer pageNum) {
+    public List<Article> selArticle(Integer pageNum, User user) {
         PageHelper.startPage(pageNum, 10);
-        return articleMapper.selArticle(new Article());
+        Article article = new Article();
+        article.setWriterbean(user);
+        return articleMapper.selArticle(article);
     }
 
     @Override
@@ -56,4 +59,8 @@ public class ArticleServiceImpl implements ArticleService {
         return list.length;
     }
 
+    @Override
+    public int getTotalNum(Article article) {
+        return articleMapper.selTotalArticleNum(article);
+    }
 }

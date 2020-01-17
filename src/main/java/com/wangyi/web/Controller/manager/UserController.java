@@ -1,7 +1,7 @@
 package com.wangyi.web.Controller.manager;
 
 import com.github.pagehelper.PageInfo;
-import com.wangyi.web.pojo.common.ResponseMessage;
+import com.wangyi.web.compoment.common.ResponseMessage;
 import com.wangyi.web.pojo.User;
 import com.wangyi.web.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 
-import javax.servlet.http.HttpServletRequest;
+
 import java.util.List;
 
 /**
@@ -22,6 +22,7 @@ import java.util.List;
  **/
 
 @Controller
+//@RequiresPermissions("manager:*:user")
 @RequestMapping("/manager")
 public class UserController {
     @Autowired
@@ -55,7 +56,7 @@ public class UserController {
     @PostMapping("/user/getbyID")
     @ResponseBody
     public User user(User user){
-        return userService.selUserByID(user);
+        return userService.selUserWithAll(user);
     }
 
     /*

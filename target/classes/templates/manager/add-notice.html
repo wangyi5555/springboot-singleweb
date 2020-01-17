@@ -27,49 +27,10 @@
 <section class="container-fluid">
   <header th:replace="manager/common/common :: topbar"></header>
   <div class="row">
-    <aside class="col-sm-3 col-md-2 col-lg-2 sidebar">
-      <ul class="nav nav-sidebar">
-        <li><a href="index.html">报告</a></li>
-      </ul>
-      <ul class="nav nav-sidebar">
-        <li><a href="article.html">文章</a></li>
-        <li class="active"><a href="notice.html">公告</a></li>
-        <li><a href="comment.html">评论</a></li>
-        <li><a data-toggle="tooltip" data-placement="top" title="网站暂无留言功能">留言</a></li>
-      </ul>
-      <ul class="nav nav-sidebar">
-        <li><a href="category.html">栏目</a></li>
-        <li><a class="dropdown-toggle" id="otherMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">其他</a>
-          <ul class="dropdown-menu" aria-labelledby="otherMenu">
-            <li><a href="flink.html">友情链接</a></li>
-            <li><a href="loginlog.html">访问记录</a></li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="nav nav-sidebar">
-        <li><a class="dropdown-toggle" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">用户</a>
-          <ul class="dropdown-menu" aria-labelledby="userMenu">
-            <li><a href="#">管理用户组</a></li>
-            <li><a href="manage-user.html">管理用户</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="loginlog.html">管理登录日志</a></li>
-          </ul>
-        </li>
-        <li><a class="dropdown-toggle" id="settingMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">设置</a>
-          <ul class="dropdown-menu" aria-labelledby="settingMenu">
-            <li><a href="setting.html">基本设置</a></li>
-            <li><a href="readset.html">用户设置</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">安全配置</a></li>
-            <li role="separator" class="divider"></li>
-            <li class="disabled"><a>扩展菜单</a></li>
-          </ul>
-        </li>
-      </ul>
-    </aside>
+    <aside th:replace="manager/common/common :: aside(notice)"></aside>
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-lg-10 col-md-offset-2 main" id="main">
       <div class="row">
-        <form action="test.php" method="post" class="add-article-form">
+        <form action="test.php" method="post" class="add-article-form" enctype="multipart/form-data" th:action="@{/manager/notice/add}">
           <div class="col-md-9">
             <h1 class="page-header">撰写新公告</h1>
             <div class="form-group">
@@ -90,7 +51,7 @@
             <div class="add-article-box">
               <h2 class="add-article-box-title"><span>描述</span></h2>
               <div class="add-article-box-content">
-              	<textarea class="form-control" name="describe" autocomplete="off"></textarea>
+              	<textarea class="form-control" name="description" autocomplete="off"></textarea>
                 <span class="prompt-text">描述是可选的手工创建的内容总结，并可以在网页描述中使用</span>
               </div>
             </div>
@@ -102,7 +63,7 @@
               <div class="add-article-box-content">
               	<p><label>状态：</label><span class="article-status-display">未发布</span></p>
                 <p><label>公开度：</label><input type="radio" name="visibility" value="0" checked/>公开 <input type="radio" name="visibility" value="1" />加密</p>
-                <p><label>发布于：</label><span class="article-time-display"><input style="border: none;" type="datetime" name="time" value="2016-01-09 17:29:37" /></span></p>
+                <p><label>发布于：</label><span class="article-time-display"><input style="border: none;" type="datetime" name="lasttime" value="2016-01-09 17:29:37" th:value="${#dates.format(currentDate,'yyyy-MM-dd HH:mm:ss')}"/></span></p>
               </div>
               <div class="add-article-box-footer">
                 <button class="btn btn-primary" type="submit" name="submit">发布</button>
@@ -126,13 +87,48 @@
 <script src="../../static/js/manager/bootstrap.min.js" th:src="@{/js/manager/bootstrap.min.js}"></script>
 <script src="../../static/js/manager/admin-scripts.js" th:src="@{/js/manager/admin-scripts.js}"></script>
 <!--summernote富文本编辑器-->
-<link rel="stylesheet" type="text/css" href="../../static/lib/summernote/summernote.css">
-<script src="../../static/lib/summernote/summernote.js"></script>
-<script src="../../static/lib/summernote/lang/summernote-zh-CN.js"></script>
+<link rel="stylesheet" type="text/css" href="../../static/lib/summernote/summernote.css" th:href="@{/js/summernote/summernote.css}">
+<script src="../../static/lib/summernote/summernote.js" th:src="@{/js/summernote/summernote.min.js}"></script>
+<script src="../../static/lib/summernote/lang/summernote-zh-CN.js" th:src="@{/js/summernote/lang/summernote-zh-CN.js}"></script>
 <script>
 $('#article-content').summernote({
-	lang: 'zh-CN'
-});
+	lang: 'zh-CN',
+    callbacks: {
+      onImageUpload(file) {
+        sendFile(file);
+      }
+    }
+}
+);
+function sendFile(files) {
+  var imageData = new FormData();
+  imageData.append("file", files[0]);
+  console.log(imageData);
+  $.ajax({
+    url: '[[@{/image/upload}]]', // 图片上传url
+    type: 'POST',
+    data: imageData,
+    cache: false,
+    contentType: false,
+    processData: false,
+    dataType: 'json',     // 以json的形式接收返回的数据
+    // 图片上传成功
+    success: function (data) {
+      // let imgNode = document.createElement("img");
+      // imgNode.src = $result.img;
+      // summer.summernote('insertNode', imgNode);
+      console.log(1111);
+      $('#article-content').summernote("insertImage",data.url);
+    },
+    // 图片上传失败
+    error: function () {
+      console.log('图片上传失败');
+    }
+  });
+}
+
+
+
 </script>
 </body>
 </html>

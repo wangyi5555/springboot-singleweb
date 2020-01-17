@@ -3,6 +3,7 @@ package com.wangyi.web.service.flink;
 import com.github.pagehelper.PageHelper;
 import com.wangyi.web.dao.FlinkMapper;
 import com.wangyi.web.pojo.Flink;
+import com.wangyi.web.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,9 +21,11 @@ public class FlinkServiceImpl implements FlinkService {
     @Autowired
     private FlinkMapper flinkMapper;
     @Override
-    public List<Flink> selAllFlink(int pageNum) {
+    public List<Flink> selAllFlink(int pageNum, User user) {
         PageHelper.startPage(pageNum, 5);
-        return flinkMapper.selFlink(new Flink());
+        Flink flink = new Flink();
+        flink.setWriterbean(user);
+        return flinkMapper.selFlink(flink);
     }
 
     @Override
@@ -55,5 +58,10 @@ public class FlinkServiceImpl implements FlinkService {
             flinkMapper.delFlink(i);
         }
         return list.length;
+    }
+
+    @Override
+    public int getTotalNum(Flink flink) {
+        return flinkMapper.selTotalFlinkNum(flink);
     }
 }

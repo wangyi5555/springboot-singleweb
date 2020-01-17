@@ -23,8 +23,10 @@ public class ServerController {
     public void config(HttpServletRequest request, HttpServletResponse response) {
         response.setContentType("application/json");
         ///js/ueditor/jsp
-        String rootPath = ClassUtils.getDefaultClassLoader().getResource("").getPath()+"static";
-//        String rootPath = ClassUtils.getDefaultClassLoader().getResource("").getPath()+"static/images";
+//        String rootPath = ClassUtils.getDefaultClassLoader().getResource("").getPath()+"static";
+
+//      坑的地方：ueditor在扫描config文件后就会以那里作为ueditor的文件上传路径
+        String rootPath = "H:/upload";
         try {
             response.setCharacterEncoding("UTF-8");
             String exec = new ActionEnter(request, rootPath).exec();

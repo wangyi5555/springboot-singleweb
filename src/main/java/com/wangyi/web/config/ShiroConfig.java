@@ -1,16 +1,13 @@
 package com.wangyi.web.config;
 
-import com.wangyi.web.pojo.Filter.MyLogoutFliter;
-import com.wangyi.web.pojo.realm.UserRealm;
-import org.apache.shiro.mgt.RememberMeManager;
+import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
+import com.wangyi.web.compoment.realm.UserRealm;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.filter.authc.LogoutFilter;
 import org.apache.shiro.web.mgt.CookieRememberMeManager;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
-import org.apache.shiro.web.servlet.Cookie;
 import org.apache.shiro.web.servlet.SimpleCookie;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.boot.web.servlet.server.Session;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -27,6 +24,46 @@ import java.util.Map;
  **/
 @Configuration
 public class ShiroConfig {
+
+    /*
+     * @Author Wrysunny
+     * @Description //TODO 配置themleaf支持shiro
+     * @Date 16:02 2020/1/17
+     * @Param []
+     * @return at.pollux.thymeleaf.shiro.dialect.ShiroDialect
+     **/
+    @Bean
+    public ShiroDialect shiroDialect(){
+        return new ShiroDialect();
+    }
+    /*
+     * @Author Wrysunny
+     * @Description //TODO 设置shiro注解启动
+     * @Date 16:02 2020/1/17
+     * @Param [defaultWebSecurityManager]
+     * @return org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor
+     **/
+//    @Bean
+//    public AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor(@Qualifier("defaultWebSecurityManager")DefaultWebSecurityManager defaultWebSecurityManager) {
+//        AuthorizationAttributeSourceAdvisor advisor = new AuthorizationAttributeSourceAdvisor();
+//        advisor.setSecurityManager(defaultWebSecurityManager);
+//        return advisor;
+//    }
+//
+//    @Bean
+//    @ConditionalOnMissingBean
+//    public DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator() {
+//        DefaultAdvisorAutoProxyCreator app = new DefaultAdvisorAutoProxyCreator();
+//        app.setProxyTargetClass(true);
+//        return app;
+//    }
+    /*
+     * @Author Wrysunny
+     * @Description //TODO shiroFilter注册器
+     * @Date 16:02 2020/1/17
+     * @Param [defaultWebSecurityManager]
+     * @return org.apache.shiro.spring.web.ShiroFilterFactoryBean
+     **/
     @Bean
     public ShiroFilterFactoryBean shiroFilterFactoryBean(@Qualifier("defaultWebSecurityManager") DefaultWebSecurityManager defaultWebSecurityManager) {
         ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
@@ -36,10 +73,14 @@ public class ShiroConfig {
         params.put("/manager/login","anon");
         params.put("/manager/login/check", "anon");
         params.put("/manager/logout", "logout");
+        params.put("/manager/category/**", "perms[manager:*:category]");
+        params.put("/manager/user/**", "perms[manager:*:user]");
+        params.put("/manager/notice/**", "perms[manager:*:notice]");
+        params.put("/manager/loginlog/**", "perms[manager:*:loginlog]");
         params.put("/manager/**", "authc");
         Map<String, Filter> filterMap = new LinkedHashMap<>();
+//        注册重写的filter
         filterMap.put("logout", logoutFilter());
-
         shiroFilterFactoryBean.setFilters(filterMap);
         shiroFilterFactoryBean.setFilterChainDefinitionMap(params);
         shiroFilterFactoryBean.setLoginUrl("/manager/login");

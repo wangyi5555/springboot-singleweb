@@ -1,6 +1,7 @@
 package com.wangyi.web.service.flink;
 
 import com.wangyi.web.pojo.Flink;
+import com.wangyi.web.pojo.User;
 
 import java.util.List;
 
@@ -12,7 +13,7 @@ import java.util.List;
  * @Version 1.0
  **/
 public interface FlinkService {
-    List<Flink> selAllFlink(int pageNum);
+    List<Flink> selAllFlink(int pageNum, User user);
 
     Flink selFlinkByID(Flink flink);
 
@@ -21,4 +22,6 @@ public interface FlinkService {
     int delFilnk(int id);
 
     int delByList(Integer[] list);
+
+    int getTotalNum(Flink flink);
 }

@@ -2,7 +2,7 @@ package com.wangyi.web.Controller.manager;
 
 import com.github.pagehelper.PageInfo;
 import com.wangyi.web.pojo.LoginLog;
-import com.wangyi.web.pojo.common.ResponseMessage;
+import com.wangyi.web.compoment.common.ResponseMessage;
 import com.wangyi.web.service.loginlog.LoginlogServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

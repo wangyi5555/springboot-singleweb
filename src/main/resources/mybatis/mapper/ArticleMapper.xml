@@ -20,15 +20,25 @@
             <id property="id" column="c_id"/>
             <result property="name" column="c_name"/>
         </association>
+        <association property="writerbean" javaType="User">
+            <id property="id" column="u_id"/>
+            <result property="username" column="u_username"/>
+        </association>
     </resultMap>
     <select id="selArticle" resultMap="article">
-        select a.*,c.c_id,c.c_name
+        select a.*,
+        c.c_id,c.c_name,
+        u.u_id,u.u_username
         from tb_article a
         left join tb_category c on a.a_categoryid = c.c_id
+        left join tb_user u on a.a_writerid = u.u_id
         <where>
             <trim prefixOverrides="and">
                 <if test="id!=null">
                     and a_id = #{id}
+                </if>
+                <if test="writerbean.id!=null and writerbean.role.id==1">
+                    and a_writerid = #{writerbean.id}
                 </if>
             </trim>
         </where>
@@ -36,8 +46,8 @@
 
     <insert id="insArticle">
         insert
-        into `tb_article` (`a_title`, `a_content`, `a_keywords`, `a_description`, `a_categoryid`, `a_tags`, `a_titlepic`,`a_visibility`,`a_lasttime`)
-        values (#{title},#{content},#{keywords},#{description},#{category},#{tags},#{titlepic},#{visibility},#{lasttime})
+        into `tb_article` (`a_title`, `a_content`, `a_keywords`, `a_description`, `a_categoryid`, `a_tags`, `a_titlepic`,`a_visibility`,`a_lasttime`,`a_writerid`)
+        values (#{title},#{content},#{keywords},#{description},#{category},#{tags},#{titlepic},#{visibility},#{lasttime},#{writerbean.id})
     </insert>
 
     <update id="updArticle">
@@ -60,5 +70,17 @@
         from tb_article
         where a_id = #{id}
     </delete>
+
+    <select id="selTotalArticleNum" resultType="Integer">
+        select count(*)
+        from tb_article
+        <where>
+            <trim prefixOverrides="and">
+                <if test="writerbean.id!=null and writerbean.role.id==1">
+                    and a_writerid = #{writerbean.id}
+                </if>
+            </trim>
+        </where>
+    </select>
 
 </mapper>

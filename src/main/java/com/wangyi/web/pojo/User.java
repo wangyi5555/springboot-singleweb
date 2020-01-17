@@ -29,5 +29,7 @@ public class User {
 //    用户是否激活：0 1
     private Integer isActive;
 
+    private Role role = new Role();
+
     private List<LoginLog> loginLog;
 }

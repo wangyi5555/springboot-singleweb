@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--mapper的dtd  -->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangyi.web.dao.SettingMapper">
+    <resultMap id="setting" type="Setting">
+        <id property="id" column="s_id"/>
+        <result property="title" column="s_title"/>
+        <result property="secondtitle" column="s_secondtitle"/>
+        <result property="url" column="s_url"/>
+        <result property="keywords" column="s_keywords"/>
+        <result property="description" column="s_description"/>
+        <result property="email" column="s_email"/>
+        <result property="icp" column="s_icp"/>
+        <result property="timeout" column="s_timeout"/>
+    </resultMap>
+
+    <select id="selSetting" resultMap="setting">
+        select * from tb_setting
+    </select>
+    <update id="updSetting">
+        update tb_setting
+        set
+        `s_title` = #{title},
+        `s_secondtitle` = #{secondtitle},
+        `s_url` = #{url},
+        `s_keywords` = #{keywords},
+        `s_description` = #{description},
+        `s_email` = #{email},
+        `s_icp` = #{icp},
+        `s_timeout` = #{timeout}
+    </update>
+</mapper>

@@ -2,15 +2,13 @@ package com.wangyi.web.Controller.manager;
 
 import com.wangyi.web.common.CategoryCommon;
 import com.wangyi.web.pojo.Category;
-import com.wangyi.web.pojo.User;
-import com.wangyi.web.pojo.common.ResponseMessage;
+import com.wangyi.web.compoment.common.ResponseMessage;
 import com.wangyi.web.service.category.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Date;
 import java.util.List;
 
 /**

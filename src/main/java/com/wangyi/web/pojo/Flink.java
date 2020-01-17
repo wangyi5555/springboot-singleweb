@@ -1,9 +1,8 @@
 package com.wangyi.web.pojo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.wangyi.web.pojo.Enum.FlikTarget;
 import lombok.Data;
-import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.stereotype.Component;
 
 import java.sql.Timestamp;
 
@@ -15,6 +14,7 @@ import java.sql.Timestamp;
  * @Version 1.0
  **/
 @Data
+@Component
 public class Flink {
     private Integer id;
     private String name;
@@ -23,7 +23,7 @@ public class Flink {
     private String description;
     private String target;
     private String rel;
-    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Timestamp lastDate;
-
+    private User writerbean = new User();
 }

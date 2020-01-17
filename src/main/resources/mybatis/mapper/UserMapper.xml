@@ -12,6 +12,10 @@
         <result property="password" column="u_password"/>
         <result property="phone" column="u_phone"/>
         <result property="isActive" column="u_isactive"/>
+        <association property="role" javaType="Role">
+            <id property="id" column="r_id"/>
+            <result property="perms" column="r_perms"/>
+        </association>
         <collection property="loginLog" ofType="LoginLog">
             <id property="id" column="l_id"/>
             <result property="userid" column="l_userid"/>
@@ -37,11 +41,14 @@
         </where>
     </select>
 
-    <select id="selUserWithLoginLog" resultMap="user">
+    <select id="selUserWithAll" resultMap="user">
         select
-        u.u_id,u.u_username,u.u_name,u.u_phone,l.*
+        u.u_id,u.u_username,u.u_name,u.u_phone,u.u_password,
+        l.*,
+        r.r_id,r.r_perms
         from tb_user u
         left join tb_loginlog l on u.u_id = l.l_userid
+        left join tb_role r on u.u_role= r.r_id
         <where>
             <trim prefixOverrides="and" suffixOverrides=",">
                 <if test="id != null">
@@ -68,6 +75,9 @@
             <choose>
                 <when test="isActive!=null">
                     `u_isactive`=#{isActive},
+                </when>
+                <when test="role.id!=null">
+                    `u_role`= #{role.id},
                 </when>
                 <otherwise>
                     <if test="username!=null and username !=''">

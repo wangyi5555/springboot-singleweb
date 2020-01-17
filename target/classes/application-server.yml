@@ -1,0 +1,3 @@
+server:
+  tomcat:
+    basedir: file:H://upload/

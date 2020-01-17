@@ -14,22 +14,31 @@
         <result property="target" column="f_target"/>
         <result property="rel" column="f_rel"/>
         <result property="lastDate" column="f_lastDate"/>
+        <association property="writerbean" javaType="User">
+            <id property="id" column="u_id"/>
+            <result property="username" column="u_username"/>
+        </association>
     </resultMap>
     <select id="selFlink" resultMap="flink">
-        select *
-        from tb_flink
+        select f.f_id,f.f_name,f.f_url,f.f_imgurl,f.f_description,f.f_target,f.f_rel,f.f_lastDate,
+        u.u_id,u.u_username
+        from tb_flink f
+        left join tb_user u on f.f_writerid = u.u_id
         <where>
-            <trim prefixOverrides="and" suffixOverrides=",">
+            <trim prefixOverrides="and">
                 <if test="id!=null">
-                    and f_id = #{id},
+                    and f.f_id = #{id}
+                </if>
+                <if test="writerbean.id!=null and writerbean.role.id==1">
+                    and f.f_writerid = #{writerbean.id}
                 </if>
             </trim>
         </where>
     </select>
     <insert id="insFlink">
         insert
-        into tb_flink(`f_name`, `f_url`, `f_imgurl`, `f_description`, `f_target`, `f_rel`, `f_lastDate`)
-        values(#{name},#{url},#{imgurl},#{description},#{target},#{rel},#{lastDate})
+        into tb_flink(`f_name`, `f_url`, `f_imgurl`, `f_description`, `f_target`, `f_rel`, `f_lastDate`,`f_writerid`)
+        values(#{name},#{url},#{imgurl},#{description},#{target},#{rel},#{lastDate},#{writerbean.id})
     </insert>
     <update id="updFlink">
         update tb_flink
@@ -47,4 +56,16 @@
         from tb_flink
         where f_id = #{id}
     </delete>
+
+    <select id="selTotalFlinkNum" resultType="Integer">
+        select count(*)
+        from tb_flink
+        <where>
+            <trim prefixOverrides="and">
+                <if test="writerbean.id!=null and writerbean.role.id==1">
+                    and f_writerid = #{writerbean.id}
+                </if>
+            </trim>
+        </where>
+    </select>
 </mapper>

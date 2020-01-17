@@ -19,4 +19,6 @@ public interface ArticleMapper {
     int updArticle(Article article);
 
     int delArticle(Integer id);
+
+    int selTotalArticleNum(Article article);
 }

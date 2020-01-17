@@ -1,12 +1,19 @@
 package com.wangyi.web.Controller.manager;
 
 import com.github.pagehelper.PageInfo;
+import com.wangyi.web.pojo.Article;
+import com.wangyi.web.pojo.Flink;
 import com.wangyi.web.pojo.User;
+import com.wangyi.web.service.article.ArticleService;
+import com.wangyi.web.service.flink.FlinkService;
 import com.wangyi.web.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.servlet.http.HttpSession;
 
 /**
  * @ClassName ManagerPageController
@@ -18,6 +25,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/manager")
 public class IndexController {
+    @Autowired
+    private ArticleService articleService;
+
+    @Autowired
+    private FlinkService flinkService;
 
     /*
      * @Author Wrysunny
@@ -27,7 +39,18 @@ public class IndexController {
      * @return java.lang.String
      **/
     @GetMapping("/index")
-    public String managerIndexPage(){
+    public String managerIndexPage(Model model,
+                                   HttpSession session) {
+        User user = (User) session.getAttribute("loginuser");
+        System.out.println(user);
+        Article article = new Article();
+        Flink flink = new Flink();
+        flink.setWriterbean(user);
+        article.setWriterbean(user);
+        int articleTotalNum = articleService.getTotalNum(article);
+        int flinkTotalNum = flinkService.getTotalNum(flink);
+        model.addAttribute("articleTotalNum", articleTotalNum);
+        model.addAttribute("flinkTotalNum", flinkTotalNum);
         return "manager/index";
     }
 

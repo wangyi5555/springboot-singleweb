@@ -35,14 +35,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User selUserWithLog(User user) {
-        return userMapper.selUserWithLoginLog(user);
+    public User selUserWithAll(User user) {
+        return userMapper.selUserWithAll(user);
 
-    }
-
-    @Override
-    public User selUserByID(User user) {
-        return userMapper.selUser(user).get(0);
     }
 
     /*

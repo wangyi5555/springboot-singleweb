@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -42,21 +43,21 @@
     </ul>
     <ul class="nav nav-sidebar">
         <li th:class="${active}=='article'?'active':''"><a href="article.html" th:href="@{/manager/article/1}">文章</a></li>
-        <li><a href="notice.html">公告</a></li>
+        <li th:class="${active}=='notice'?'active':''" shiro:hasPermission="manager:*:notice"><a href="notice.html" th:href="@{/manager/notice/1}">公告</a></li>
         <li><a href="comment.html">评论</a></li>
-        <li><a data-toggle="tooltip" data-placement="bottom" title="网站暂无留言功能">留言</a></li>
+        <li shiro:hasPermission="manager:*:comment"><a data-toggle="tooltip" data-placement="bottom" title="网站暂无留言功能">留言</a></li>
     </ul>
     <ul class="nav nav-sidebar">
-        <li th:class="${active}=='category'?'active':''"><a href="category.html" th:href="@{/manager/category}">栏目</a></li>
+        <li shiro:hasPermission="manager:*:category" th:class="${active}=='category'?'active':''"><a href="category.html" th:href="@{/manager/category}">栏目</a></li>
         <li th:class="${active =='flink'}?'active':''"><a class="dropdown-toggle" id="otherMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">其他</a>
             <ul class="dropdown-menu" aria-labelledby="otherMenu">
                 <li><a href="flink.html" th:href="@{/manager/flink/1}">友情链接</a></li>
-                <li><a data-toggle="modal" data-target="#areDeveloping">访问记录</a></li>
+                <li shiro:hasPermission="manager:*:loginlog"><a data-toggle="modal" data-target="#areDeveloping">访问记录</a></li>
             </ul>
         </li>
     </ul>
     <ul class="nav nav-sidebar">
-        <li th:class="${active =='user'|| active == 'loginlog'}?'active':''"><a class="dropdown-toggle" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">用户</a>
+        <li shiro:hasPermission="manager:*:user" th:class="${active =='user'|| active == 'loginlog'}?'active':''"><a class="dropdown-toggle" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">用户</a>
             <ul class="dropdown-menu" aria-labelledby="userMenu">
                 <li><a data-toggle="modal" data-target="#areDeveloping">管理用户组</a></li>
                 <li><a href="manage-user.html" th:href="@{/manager/user/1}">管理用户</a></li>
@@ -64,10 +65,10 @@
                 <li><a href="loginlog.html" th:href="@{/manager/loginlog/1}">管理登录日志</a></li>
             </ul>
         </li>
-        <li><a class="dropdown-toggle" id="settingMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">设置</a>
+        <li th:class="${active}=='setting'?'active':''" shiro:hasPermission="manager:*:setting"><a class="dropdown-toggle" id="settingMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">设置</a>
             <ul class="dropdown-menu" aria-labelledby="settingMenu">
-                <li><a href="setting.html">基本设置</a></li>
-                <li><a href="readset.html">阅读设置</a></li>
+                <li><a href="setting.html" th:href="@{/manager/setting}">基本设置</a></li>
+<!--                <li><a href="readset.html">阅读设置</a></li>-->
                 <li role="separator" class="divider"></li>
                 <li><a data-toggle="modal" data-target="#areDeveloping">安全配置</a></li>
                 <li role="separator" class="divider"></li>

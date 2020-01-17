@@ -1,6 +1,7 @@
 package com.wangyi.web.service.article;
 
 import com.wangyi.web.pojo.Article;
+import com.wangyi.web.pojo.User;
 
 import java.util.List;
 
@@ -12,7 +13,7 @@ import java.util.List;
  * @Version 1.0
  **/
 public interface ArticleService {
-    List<Article> selArticle(Integer pageNum);
+    List<Article> selArticle(Integer pageNum, User user);
 
     Article selArticleBy(Article article);
 
@@ -22,4 +23,6 @@ public interface ArticleService {
     int delArticle(Integer id);
 
     int delByList(Integer[] list);
+
+    int getTotalNum(Article article);
 }

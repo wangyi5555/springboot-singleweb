@@ -21,4 +21,5 @@ public interface FlinkMapper {
 
     int delFlink(int id);
 
+    int selTotalFlinkNum(Flink flink);
 }

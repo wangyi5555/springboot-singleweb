@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>写公告 - 异清轩博客管理系统</title>
+<link rel="stylesheet" type="text/css" href="../../static/css/manager/bootstrap.min.css" th:href="@{/css/manager/bootstrap.min.css}">
+<link rel="stylesheet" type="text/css" href="../../static/css/manager/style.css" th:href="@{/css/manager/style.css}">
+<link rel="stylesheet" type="text/css" href="../../static/css/manager/font-awesome.min.css"  th:href="@{/css/manager/font-awesome.min.css}">
+<link rel="apple-touch-icon-precomposed" href="../../static/images/manager/icon/icon.png"  th:href="@{/images/manager/icon/icon.png}">
+<link rel="shortcut icon" href="../../static/images/manager/icon/favicon.ico"  th:href="@{/images/manager/icon/favicon.ico}">
+<script src="../../static/js/manager/jquery-2.1.4.min.js" th:src="@{/js/manager/jquery-2.1.4.min.js}"></script>
+<!--[if gte IE 9]>
+  <script src="../../static/js/manager/jquery-1.11.1.min.js" type="text/javascript" th:src="@{/js/manager/jquery-1.11.1.min.js}"></script>
+  <script src="../../static/js/manager/html5shiv.min.js" type="text/javascript" th:src="@{/js/manager/html5shiv.min.js}"></script>
+  <script src="../../static/js/manager/respond.min.js" type="text/javascript" th:src="@{/js/manager/respond.min.js}"></script>
+  <script src="../../static/js/manager/selectivizr-min.js" type="text/javascript" th:src="@{/js/manager/selectivizr-min.js}"></script>
+  <![endif]-->
+<!--[if lt IE 9]>
+  <script>window.location.href='upgrade-browser.html';</script>
+<![endif]-->
+</head>
+
+<body class="user-select">
+<section class="container-fluid">
+  <header th:replace="manager/common/common :: topbar"></header>
+  <div class="row">
+    <aside th:replace="manager/common/common :: aside(notice)"></aside>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-lg-10 col-md-offset-2 main" id="main">
+      <div class="row">
+        <form action="test.php" method="post" class="add-article-form" enctype="multipart/form-data" th:action="@{/manager/notice/update}">
+          <input type="hidden" name="_method" value="put">
+          <input type="hidden" name="id" th:value="${notice.getId()}">
+          <div class="col-md-9">
+            <h1 class="page-header">撰写新公告</h1>
+            <div class="form-group">
+              <label for="article-title" class="sr-only">标题</label>
+              <input type="text" id="article-title" name="title" class="form-control" placeholder="在此处输入标题" required autofocus autocomplete="off" th:value="${notice.getTitle()}">
+            </div>
+            <div class="form-group">
+              <label for="article-content" class="sr-only">内容</label>
+              <textarea id="article-content" name="content" class="form-control" th:text="${notice.getContent()}"></textarea>
+            </div>
+            <div class="add-article-box">
+              <h2 class="add-article-box-title"><span>关键字</span></h2>
+              <div class="add-article-box-content">
+              	<input type="text" class="form-control" placeholder="请输入关键字" name="keywords" autocomplete="off" th:value="${notice.getKeywords()}">
+                <span class="prompt-text">多个标签请用英文逗号,隔开。</span>
+              </div>
+            </div>
+            <div class="add-article-box">
+              <h2 class="add-article-box-title"><span>描述</span></h2>
+              <div class="add-article-box-content">
+              	<textarea class="form-control" name="description" autocomplete="off" th:text="${notice.getDescription()}"></textarea>
+                <span class="prompt-text">描述是可选的手工创建的内容总结，并可以在网页描述中使用</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h1 class="page-header">操作</h1>
+            <div class="add-article-box">
+              <h2 class="add-article-box-title"><span>发布</span></h2>
+              <div class="add-article-box-content">
+              	<p><label>状态：</label><span class="article-status-display">未发布</span></p>
+                <p><label>公开度：</label><input type="radio" name="visibility" value="0" th:checked="${notice.getVisibility()==0}"/>公开 <input type="radio" name="visibility" value="1" th:checked="${notice.getVisibility()==1}"/>加密</p>
+                <p><label>发布于：</label><span class="article-time-display"><input style="border: none;" type="datetime" name="lasttime" value="2016-01-09 17:29:37" th:value="${#dates.format(currentDate,'yyyy-MM-dd HH:mm:ss')}"/></span></p>
+              </div>
+              <div class="add-article-box-footer">
+                <button class="btn btn-primary" type="submit" name="submit">修改</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<div th:replace="manager/common/common :: seeUserInfo"></div>
+<!--个人登录记录模态框-->
+<div th:replace="manager/common/common :: seeUserLoginlog"></div>
+<!--微信二维码模态框-->
+<div th:replace="manager/common/common :: wechat"></div>
+<!--提示模态框-->
+<div th:replace="manager/common/common :: areDeveloping"></div>
+<!--右键菜单列表-->
+<div th:replace="manager/common/common :: rightClickMenu"></div>
+<script src="../../static/js/manager/bootstrap.min.js" th:src="@{/js/manager/bootstrap.min.js}"></script>
+<script src="../../static/js/manager/admin-scripts.js" th:src="@{/js/manager/admin-scripts.js}"></script>
+<!--summernote富文本编辑器-->
+<link rel="stylesheet" type="text/css" href="../../static/lib/summernote/summernote.css" th:href="@{/js/summernote/summernote.css}">
+<script src="../../static/lib/summernote/summernote.js" th:src="@{/js/summernote/summernote.min.js}"></script>
+<script src="../../static/lib/summernote/lang/summernote-zh-CN.js" th:src="@{/js/summernote/lang/summernote-zh-CN.js}"></script>
+<script>
+$('#article-content').summernote({
+	lang: 'zh-CN',
+    callbacks: {
+      onImageUpload(file) {
+        sendFile(file);
+      }
+    }
+}
+);
+function sendFile(files) {
+  var imageData = new FormData();
+  imageData.append("file", files[0]);
+  console.log(imageData);
+  $.ajax({
+    url: '[[@{/image/upload}]]', // 图片上传url
+    type: 'POST',
+    data: imageData,
+    cache: false,
+    contentType: false,
+    processData: false,
+    dataType: 'json',     // 以json的形式接收返回的数据
+    // 图片上传成功
+    success: function (data) {
+      $('#article-content').summernote("insertImage",data.url);
+    },
+    // 图片上传失败
+    error: function () {
+      console.log('图片上传失败');
+    }
+  });
+}
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--mapper的dtd  -->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangyi.web.dao.NoticeMapper">
+    <resultMap id="notice" type="Notice">
+        <id property="id" column="n_id"/>
+        <result property="title" column="n_title"/>
+        <result property="content" column="n_content"/>
+        <result property="keywords" column="n_keywords"/>
+        <result property="description" column="n_description"/>
+        <result property="visibility" column="n_visibility"/>
+        <result property="lasttime" column="n_lasttime"/>
+    </resultMap>
+
+    <select id="selNotice" resultMap="notice">
+        select * from tb_notice
+        <where>
+            <trim suffixOverrides=",">
+                <if test="id!=null">
+                    n_id = #{id},
+                </if>
+            </trim>
+        </where>
+    </select>
+
+    <insert id="insNotice">
+        insert
+        into tb_notice(`n_title`, `n_content`, `n_keywords`, `n_description`,`n_visibility`, `n_lasttime`)
+        values (#{title},#{content},#{keywords},#{description},#{visibility},#{lasttime})
+    </insert>
+
+    <update id="updNotice">
+        update tb_notice
+        set
+        `n_title`=#{title},
+        `n_content`=#{content},
+        `n_keywords`=#{keywords},
+        `n_description`=#{description},
+        `n_visibility`=#{visibility},
+        `n_lasttime`=#{lasttime}
+        where `n_id`=#{id}
+    </update>
+
+    <delete id="delNotice">
+        delete from tb_notice
+        where n_id = #{id};
+    </delete>
+
+</mapper>

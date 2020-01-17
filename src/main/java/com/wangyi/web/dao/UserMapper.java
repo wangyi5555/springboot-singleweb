@@ -16,7 +16,7 @@ public interface UserMapper {
 
     List<User> selUser(User user);
 
-    User selUserWithLoginLog(User user);
+    User selUserWithAll(User user);
 
     int insUser(User user);
 
