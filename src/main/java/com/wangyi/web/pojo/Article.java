@@ -6,6 +6,7 @@ import lombok.Data;
 import org.springframework.stereotype.Component;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 
 /**
@@ -35,7 +36,10 @@ public class Article {
 
     private Category categorybean = new Category();
 
-    //此处注意如果要在mapper文件作为条件来使用不能为空，所以最好在初始化时就赋值
+    //此处注意如果要在mapper文件作为条件来使用不能为空，所以最好在定义时就初始化
     private User writerbean = new User();
 
+    private Integer clickNum;
+
+    private List<Comment> commentList;
 }

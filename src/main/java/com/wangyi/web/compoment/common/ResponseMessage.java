@@ -1,7 +1,11 @@
-package com.wangyi.web.pojo.common;
+package com.wangyi.web.compoment.common;
 
 
 import lombok.Data;
+import org.springframework.stereotype.Component;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * @ClassName ResponseMessage
@@ -11,6 +15,7 @@ import lombok.Data;
  * @Version 1.0
  **/
 @Data
+@Component
 public class ResponseMessage {
     private String code;
     private String message;

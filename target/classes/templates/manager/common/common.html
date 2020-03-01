@@ -12,7 +12,7 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">切换导航</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                <a class="navbar-brand" href="/">YlsatCMS</a> </div>
+                <a class="navbar-brand" href="" th:href="@{/manager/index}">YlsatCMS</a> </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="">消息 <span class="badge">1</span></a></li>
@@ -44,7 +44,7 @@
     <ul class="nav nav-sidebar">
         <li th:class="${active}=='article'?'active':''"><a href="article.html" th:href="@{/manager/article/1}">文章</a></li>
         <li th:class="${active}=='notice'?'active':''" shiro:hasPermission="manager:*:notice"><a href="notice.html" th:href="@{/manager/notice/1}">公告</a></li>
-        <li><a href="comment.html">评论</a></li>
+        <li><a href="comment.html" data-toggle="modal" data-target="#areDeveloping">评论</a></li>
         <li shiro:hasPermission="manager:*:comment"><a data-toggle="tooltip" data-placement="bottom" title="网站暂无留言功能">留言</a></li>
     </ul>
     <ul class="nav nav-sidebar">
@@ -152,7 +152,7 @@
                     <tbody>
                     <tr th:each="loginlog:${session.loginuser.getLoginLog()}">
                         <td th:text="${loginlog.getIp()}"></td>
-                        <td th:text="${loginlog.getLasttime()}"></td>
+                        <td th:text="${#dates.format(loginlog.getLasttime(),'yyyy-MM-dd HH:mm:ss')}"></td>
                         <td th:text="${loginlog.getStatus()}==0?'失败':'成功'"></td>
                     </tr>
                     </tbody>
@@ -213,11 +213,11 @@
             </div>
         </div>
         <ul class="pagination pagenav">
-            <li th:class="${pageInfo.isHasPreviousPage()}?'':'disabled'"><a aria-label="Previous" th:href="${href}+'/'+${pageInfo.getNavigateFirstPage()}"> <span aria-hidden="true">&laquo;</span> </a> </li>
-            <li th:if="${pageInfo.isHasPreviousPage()}"><a th:text="${pageInfo.getPrePage()}" th:href="${href}+'/'+${pageInfo.getPrePage()}"></a></li>
+            <li th:class="${pageInfo.isHasPreviousPage()}?'':'disabled'"><a aria-label="Previous" th:href="@{${href}+'/'+${pageInfo.getNavigateFirstPage()}}"> <span aria-hidden="true">&laquo;</span> </a> </li>
+            <li th:if="${pageInfo.isHasPreviousPage()}"><a th:text="${pageInfo.getPrePage()}" th:href="@{${href}+'/'+${pageInfo.getPrePage()}}"></a></li>
             <li class="active"><a href="#" th:text="${pageInfo.getPageNum()}">1</a></li>
-            <li th:if="${pageInfo.isHasNextPage()}"><a th:text="${pageInfo.getNextPage()}" th:href="${href}+'/'+${pageInfo.getNextPage()}"></a></li>
-            <li th:class="${pageInfo.isHasNextPage()}?'':'disabled'"><a href="#" aria-label="Next" th:href="${href}+'/'+${pageInfo.getNavigateLastPage()}"> <span aria-hidden="true">&raquo;</span> </a> </li>
+            <li th:if="${pageInfo.isHasNextPage()}"><a th:text="${pageInfo.getNextPage()}" th:href="@{${href}+'/'+${pageInfo.getNextPage()}}"></a></li>
+            <li th:class="${pageInfo.isHasNextPage()}?'':'disabled'"><a href="#" aria-label="Next" th:href="@{${href}+'/'+${pageInfo.getNavigateLastPage()}}"> <span aria-hidden="true">&raquo;</span> </a> </li>
         </ul>
     </nav>
 </footer>

@@ -1,6 +1,8 @@
 package com.wangyi.web;
 
+import com.wangyi.web.common.ArticleCommon;
 import com.wangyi.web.common.CategoryCommon;
+import com.wangyi.web.compoment.Enum.SelectArticleModel;
 import com.wangyi.web.dao.*;
 import com.wangyi.web.pojo.*;
 import com.wangyi.web.service.category.CategoryService;
@@ -16,23 +18,16 @@ class WebApplicationTests {
 
 
     @Autowired
-    private FlinkMapper flinkMapper;
+    private ArticleMapper articleMapper;
 
     @Test
     void contextLoads() {
-        Flink flink = new Flink();
-        User user = new User();
-        user.setId(18);
-        Role role = new Role();
-        role.setId(1);
-        user.setRole(role);
+//        List<Article> list = articleMapper.selArticle(new Article(), SelectArticleModel._BYCLICK);
+//        ArticleCommon.getArticleIndex(list);
+//        System.out.println(SelectArticleModel._BYCLICK.getFlag());
 
-
-        flink.setWriterbean(user);
-
-        System.out.println(flink);
-        List<Flink> flinks = flinkMapper.selFlink(flink);
-        flinks.forEach(System.out::println);
+        List<Article> list = articleMapper.selArticle(new Article(), SelectArticleModel._BYCLICK, "","");
+        System.out.println(list);
     }
 
 

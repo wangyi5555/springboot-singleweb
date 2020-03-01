@@ -4,10 +4,7 @@ import com.google.common.base.Splitter;
 import com.wangyi.web.pojo.User;
 import com.wangyi.web.service.user.UserService;
 import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authc.AuthenticationException;
-import org.apache.shiro.authc.AuthenticationInfo;
-import org.apache.shiro.authc.AuthenticationToken;
-import org.apache.shiro.authc.SimpleAuthenticationInfo;
+import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
@@ -16,9 +13,7 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.sql.SQLOutput;
 import java.util.List;
-import java.util.Set;
 
 /**
  * @ClassName UserRealm
@@ -55,6 +50,9 @@ public class UserRealm extends AuthorizingRealm {
         User user = new User();
         user.setUsername(username);
         user = userService.selUserWithAll(user);
+        if(user.getIsActive()==0){
+            throw new LockedAccountException();
+        }
         if (user.getUsername().equals(username)) {
             //放入session
             Subject subject = SecurityUtils.getSubject();

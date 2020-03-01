@@ -2,95 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ebec12b-c569-4ee3-9a08-45e4107d41b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_unknown.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/ServerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/ServerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/FlinkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/FlinkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/LoginLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/LoginLogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/webpage/WebPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/webpage/WebPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/WebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/WebApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/compoment/common/ResponseMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/compoment/common/ResponseMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/compoment/realm/UserRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/compoment/realm/UserRealm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/config/ShiroConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/dao/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/dao/ArticleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/dao/FlinkMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/dao/FlinkMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/dao/LoginLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/dao/LoginLogMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/pojo/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/pojo/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/pojo/Enum/FlikTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/compoment/Enum/FlikTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/pojo/Filter/MyLogoutFliter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/compoment/Filter/MyLogoutFliter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/pojo/Flink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/pojo/Flink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/pojo/common/ResponseMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/compoment/common/ResponseMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/pojo/realm/UserRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/compoment/realm/UserRealm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/article/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/article/ArticleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/article/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/article/ArticleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/flink/FlinkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/flink/FlinkService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/flink/FlinkServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/flink/FlinkServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/user/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-mvc.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/loginlog/LoginLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/loginlog/LoginLogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/loginlog/LoginlogServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/loginlog/LoginlogServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ArticleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/FlinkMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/FlinkMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/LoginLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/LoginLogMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/add-notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/add-notice.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/common/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/common/common.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/notice.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/setting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/webpage/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/webpage/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/webpage/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/webpage/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/webpage/friendly.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/webpage/friendly.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/webpage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/webpage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/webpage/readerWall.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/webpage/readerWall.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/webpage/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/webpage/tags.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/wangyi/web/WebApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wangyi/web/WebApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-mvc.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-mvc.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/BaseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/ServerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/ServerController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/ArticleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/CategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/FlinkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/FlinkController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/IndexController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/LoginLogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/LoginLogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/webpage/WebPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/webpage/WebPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/WebApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/WebApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/compoment/common/ResponseMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/compoment/common/ResponseMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/compoment/realm/UserRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/compoment/realm/UserRealm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/config/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/config/ShiroConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/dao/ArticleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/dao/ArticleMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/dao/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/dao/LoginLogMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/dao/LoginLogMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/pojo/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/pojo/Article.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/pojo/Enum/FlikTarget.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/pojo/Filter/MyLogoutFliter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/pojo/Flink.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/pojo/Flink.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/pojo/common/ResponseMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/pojo/realm/UserRealm.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/article/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/article/ArticleService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/article/ArticleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/article/ArticleServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/flink/FlinkService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/flink/FlinkService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/flink/FlinkServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/flink/FlinkServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/user/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/user/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/user/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/loginlog/LoginLogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/loginlog/LoginLogServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/loginlog/LoginlogServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/loginlog/LoginlogServices.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/ArticleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/FlinkMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/FlinkMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/LoginLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/LoginLogMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/ueditor/jsp/upload/image/20200115/1579018625544022352.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/ueditor/jsp/upload/image/20200115/1579018625560040846.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/ueditor/jsp/upload/image/20200115/1579018670895014851.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/ueditor/jsp/upload/image/20200115/1579018670903049436.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/ueditor/jsp/upload/image/20200115/1579018986229083327.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/ueditor/jsp/upload/image/20200115/1579018986238002235.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/upload/image/20200115/1579092112818024164.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/upload/image/20200115/1579092112867006288.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/upload/image/20200115/1579092381832068547.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/upload/image/20200115/1579092381844070042.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/upload/image/20200115/1579092396082039319.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/upload/image/20200115/1579092396091082379.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/add-notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/add-notice.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/common/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/common/common.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/notice.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/notice.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/setting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/webpage/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/webpage/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/webpage/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/webpage/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/webpage/friendly.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/webpage/friendly.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/webpage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/webpage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/webpage/readerWall.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/webpage/readerWall.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/webpage/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/webpage/tags.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/wangyi/web/WebApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/wangyi/web/WebApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web.iml" afterDir="false" />
     </list>
@@ -107,10 +71,12 @@
       <list>
         <option value="Mybatis' config xml" />
         <option value="ymi file" />
-        <option value="HTML File" />
-        <option value="Interface" />
+        <option value="Enum" />
+        <option value="AnnotationType" />
         <option value="Mybatis' s mapper xml" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -165,7 +131,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -179,6 +145,7 @@
       <recent name="com.wangyi.web" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wangyi.web.annotation" />
       <recent name="com.wangyi.web.Controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -312,7 +279,20 @@
       <workItem from="1579163636135" duration="26291000" />
       <workItem from="1579228091552" duration="7913000" />
       <workItem from="1579247407319" duration="5839000" />
-      <workItem from="1579266413999" duration="6047000" />
+      <workItem from="1579266413999" duration="6295000" />
+      <workItem from="1579273403985" duration="25000" />
+      <workItem from="1579314472833" duration="921000" />
+      <workItem from="1579325272831" duration="1141000" />
+      <workItem from="1579326629317" duration="3130000" />
+      <workItem from="1579350005146" duration="298000" />
+      <workItem from="1579915583243" duration="6402000" />
+      <workItem from="1579925159782" duration="759000" />
+      <workItem from="1580191114161" duration="6468000" />
+      <workItem from="1582004740528" duration="96000" />
+      <workItem from="1582169050866" duration="34550000" />
+      <workItem from="1582354740467" duration="14747000" />
+      <workItem from="1582867614844" duration="71000" />
+      <workItem from="1582959471254" duration="923000" />
     </task>
     <servers />
   </component>
@@ -324,10 +304,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="691" y="314" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1578660122696" />
-    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1579272930227">
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1582368337768">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1579272930227" />
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1582368337768" />
     <state x="624" y="441" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1579253215899">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -352,162 +332,166 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="775" y="416" width="394" height="218" key="Github.CreateGistDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1579090971551" />
-    <state width="1877" height="401" key="GridCell.Tab.0.bottom" timestamp="1579273154046">
+    <state width="938" height="-12" key="GridCell.Tab.0.bottom" timestamp="1582960399316">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579273154046" />
-    <state width="1877" height="401" key="GridCell.Tab.0.center" timestamp="1579273154046">
+    <state width="938" height="-12" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582960399316" />
+    <state width="938" height="-12" key="GridCell.Tab.0.center" timestamp="1582960399316">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579273154046" />
-    <state width="1877" height="401" key="GridCell.Tab.0.left" timestamp="1579273154045">
+    <state width="938" height="-12" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582960399316" />
+    <state width="938" height="-12" key="GridCell.Tab.0.left" timestamp="1582960399316">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579273154045" />
-    <state width="1877" height="401" key="GridCell.Tab.0.right" timestamp="1579273154046">
+    <state width="938" height="-12" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582960399316" />
+    <state width="938" height="-12" key="GridCell.Tab.0.right" timestamp="1582960399316">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579273154046" />
-    <state width="1877" height="401" key="GridCell.Tab.1.bottom" timestamp="1579273154047">
+    <state width="938" height="-12" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582960399316" />
+    <state width="938" height="-12" key="GridCell.Tab.1.bottom" timestamp="1582960399317">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579273154047" />
-    <state width="1877" height="401" key="GridCell.Tab.1.center" timestamp="1579273154046">
+    <state width="938" height="-12" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582960399317" />
+    <state width="938" height="-12" key="GridCell.Tab.1.center" timestamp="1582960399316">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579273154046" />
-    <state width="1877" height="401" key="GridCell.Tab.1.left" timestamp="1579273154046">
+    <state width="938" height="-12" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582960399316" />
+    <state width="938" height="-12" key="GridCell.Tab.1.left" timestamp="1582960399316">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579273154046" />
-    <state width="1877" height="401" key="GridCell.Tab.1.right" timestamp="1579273154046">
+    <state width="938" height="-12" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582960399316" />
+    <state width="938" height="-12" key="GridCell.Tab.1.right" timestamp="1582960399316">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="401" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579273154046" />
-    <state width="1877" height="601" key="GridCell.Tab.2.bottom" timestamp="1579191189945">
+    <state width="938" height="-12" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582960399316" />
+    <state width="1877" height="399" key="GridCell.Tab.2.bottom" timestamp="1582370084115">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.2.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189945" />
-    <state width="1877" height="601" key="GridCell.Tab.2.center" timestamp="1579191189945">
+    <state width="1877" height="399" key="GridCell.Tab.2.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084115" />
+    <state width="1877" height="399" key="GridCell.Tab.2.center" timestamp="1582370084114">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.2.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189945" />
-    <state width="1877" height="601" key="GridCell.Tab.2.left" timestamp="1579191189945">
+    <state width="1877" height="399" key="GridCell.Tab.2.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084114" />
+    <state width="1877" height="399" key="GridCell.Tab.2.left" timestamp="1582370084114">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.2.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189945" />
-    <state width="1877" height="601" key="GridCell.Tab.2.right" timestamp="1579191189945">
+    <state width="1877" height="399" key="GridCell.Tab.2.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084114" />
+    <state width="1877" height="399" key="GridCell.Tab.2.right" timestamp="1582370084114">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189945" />
-    <state width="1877" height="601" key="GridCell.Tab.3.bottom" timestamp="1579191189945">
+    <state width="1877" height="399" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084114" />
+    <state width="1877" height="399" key="GridCell.Tab.3.bottom" timestamp="1582370084115">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.3.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189945" />
-    <state width="1877" height="601" key="GridCell.Tab.3.center" timestamp="1579191189945">
+    <state width="1877" height="399" key="GridCell.Tab.3.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084115" />
+    <state width="1877" height="399" key="GridCell.Tab.3.center" timestamp="1582370084115">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.3.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189945" />
-    <state width="1877" height="601" key="GridCell.Tab.3.left" timestamp="1579191189945">
+    <state width="1877" height="399" key="GridCell.Tab.3.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084115" />
+    <state width="1877" height="399" key="GridCell.Tab.3.left" timestamp="1582370084115">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.3.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189945" />
-    <state width="1877" height="601" key="GridCell.Tab.3.right" timestamp="1579191189945">
+    <state width="1877" height="399" key="GridCell.Tab.3.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084115" />
+    <state width="1877" height="399" key="GridCell.Tab.3.right" timestamp="1582370084115">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.3.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189945" />
-    <state width="1877" height="601" key="GridCell.Tab.4.bottom" timestamp="1579191189945">
+    <state width="1877" height="399" key="GridCell.Tab.3.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084115" />
+    <state width="1877" height="399" key="GridCell.Tab.4.bottom" timestamp="1582370084115">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.4.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189945" />
-    <state width="1877" height="601" key="GridCell.Tab.4.center" timestamp="1579191189945">
+    <state width="1877" height="399" key="GridCell.Tab.4.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084115" />
+    <state width="1877" height="399" key="GridCell.Tab.4.center" timestamp="1582370084115">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.4.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189945" />
-    <state width="1877" height="601" key="GridCell.Tab.4.left" timestamp="1579191189945">
+    <state width="1877" height="399" key="GridCell.Tab.4.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084115" />
+    <state width="1877" height="399" key="GridCell.Tab.4.left" timestamp="1582370084115">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.4.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189945" />
-    <state width="1877" height="601" key="GridCell.Tab.4.right" timestamp="1579191189945">
+    <state width="1877" height="399" key="GridCell.Tab.4.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084115" />
+    <state width="1877" height="399" key="GridCell.Tab.4.right" timestamp="1582370084115">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.4.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189945" />
-    <state width="1877" height="601" key="GridCell.Tab.5.bottom" timestamp="1579191189945">
+    <state width="1877" height="399" key="GridCell.Tab.4.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084115" />
+    <state width="1877" height="399" key="GridCell.Tab.5.bottom" timestamp="1582370084116">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.5.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189945" />
-    <state width="1877" height="601" key="GridCell.Tab.5.center" timestamp="1579191189945">
+    <state width="1877" height="399" key="GridCell.Tab.5.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084116" />
+    <state width="1877" height="399" key="GridCell.Tab.5.center" timestamp="1582370084115">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.5.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189945" />
-    <state width="1877" height="601" key="GridCell.Tab.5.left" timestamp="1579191189945">
+    <state width="1877" height="399" key="GridCell.Tab.5.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084115" />
+    <state width="1877" height="399" key="GridCell.Tab.5.left" timestamp="1582370084115">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.5.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189945" />
-    <state width="1877" height="601" key="GridCell.Tab.5.right" timestamp="1579191189945">
+    <state width="1877" height="399" key="GridCell.Tab.5.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084115" />
+    <state width="1877" height="399" key="GridCell.Tab.5.right" timestamp="1582370084116">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.5.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189945" />
-    <state width="1877" height="601" key="GridCell.Tab.6.bottom" timestamp="1579191189946">
+    <state width="1877" height="399" key="GridCell.Tab.5.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084116" />
+    <state width="1877" height="399" key="GridCell.Tab.6.bottom" timestamp="1582370084116">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.6.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189946" />
-    <state width="1877" height="601" key="GridCell.Tab.6.center" timestamp="1579191189946">
+    <state width="1877" height="399" key="GridCell.Tab.6.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084116" />
+    <state width="1877" height="399" key="GridCell.Tab.6.center" timestamp="1582370084116">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.6.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189946" />
-    <state width="1877" height="601" key="GridCell.Tab.6.left" timestamp="1579191189946">
+    <state width="1877" height="399" key="GridCell.Tab.6.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084116" />
+    <state width="1877" height="399" key="GridCell.Tab.6.left" timestamp="1582370084116">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.6.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189946" />
-    <state width="1877" height="601" key="GridCell.Tab.6.right" timestamp="1579191189946">
+    <state width="1877" height="399" key="GridCell.Tab.6.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084116" />
+    <state width="1877" height="399" key="GridCell.Tab.6.right" timestamp="1582370084116">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.6.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189946" />
-    <state width="1877" height="601" key="GridCell.Tab.7.bottom" timestamp="1579191189946">
+    <state width="1877" height="399" key="GridCell.Tab.6.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084116" />
+    <state width="1877" height="399" key="GridCell.Tab.7.bottom" timestamp="1582370084116">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.7.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189946" />
-    <state width="1877" height="601" key="GridCell.Tab.7.center" timestamp="1579191189946">
+    <state width="1877" height="399" key="GridCell.Tab.7.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084116" />
+    <state width="1877" height="399" key="GridCell.Tab.7.center" timestamp="1582370084116">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.7.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189946" />
-    <state width="1877" height="601" key="GridCell.Tab.7.left" timestamp="1579191189946">
+    <state width="1877" height="399" key="GridCell.Tab.7.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084116" />
+    <state width="1877" height="399" key="GridCell.Tab.7.left" timestamp="1582370084116">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.7.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189946" />
-    <state width="1877" height="601" key="GridCell.Tab.7.right" timestamp="1579191189946">
+    <state width="1877" height="399" key="GridCell.Tab.7.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084116" />
+    <state width="1877" height="399" key="GridCell.Tab.7.right" timestamp="1582370084116">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="601" key="GridCell.Tab.7.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579191189946" />
-    <state x="490" y="180" key="Maven.ArtifactSearchDialog" timestamp="1579012894607">
+    <state width="1877" height="399" key="GridCell.Tab.7.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582370084116" />
+    <state x="490" y="180" key="Maven.ArtifactSearchDialog" timestamp="1580191807359">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="490" y="180" key="Maven.ArtifactSearchDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1579012894607" />
+    <state x="490" y="180" key="Maven.ArtifactSearchDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1580191807359" />
     <state x="531" y="180" key="Registry" timestamp="1578664241258">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="531" y="180" key="Registry/0.0.1920.1050@0.0.1920.1050" timestamp="1578664241258" />
-    <state x="461" y="167" key="SettingsEditor" timestamp="1578758521692">
+    <state x="461" y="167" key="SettingsEditor" timestamp="1582959911710">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1578758521692" />
-    <state x="448" y="201" width="914" height="736" key="find.popup" timestamp="1579272610768">
+    <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1582959911710" />
+    <state x="81" y="40" width="914" height="736" key="find.popup" timestamp="1582365974706">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="448" y="201" width="914" height="736" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1579272610768" />
-    <state width="425" height="154" key="javadoc.popup.new" timestamp="1579273150674">
+    <state x="81" y="40" width="914" height="736" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1582365974706" />
+    <state width="426" height="191" key="javadoc.popup.new" timestamp="1582369848117">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="425" height="154" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1579273150674" />
+    <state width="426" height="191" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1582369848117" />
     <state x="334" y="223" key="new project wizard" timestamp="1578660564665">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="334" y="223" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1578660564665" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1579184304617">
+    <state x="702" y="152" key="refactoring.ChangeSignatureDialog" timestamp="1582171826139">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1579184304617" />
+    <state x="702" y="152" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1582171826139" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1582361880021">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1582361880021" />
   </component>
   <component name="ideajad">
     <property name="annotate" value="false" />

@@ -16,6 +16,7 @@
         <result property="titlepic" column="a_titlepic"/>
         <result property="visibility" column="a_visibility"/>
         <result property="lasttime" column="a_lasttime"/>
+        <result property="clickNum" column="a_clicknum"/>
         <association property="categorybean" javaType="Category">
             <id property="id" column="c_id"/>
             <result property="name" column="c_name"/>
@@ -24,25 +25,75 @@
             <id property="id" column="u_id"/>
             <result property="username" column="u_username"/>
         </association>
+        <collection property="commentList" ofType="Comment">
+            <id property="id" column="co_id"/>
+            <result property="username" column="co_username"/>
+            <result property="email" column="co_email"/>
+            <result property="content" column="co_content"/>
+            <result property="date" column="co_date"/>
+            <result property="belong_id" column="co_belongid"/>
+        </collection>
     </resultMap>
+
     <select id="selArticle" resultMap="article">
-        select a.*,
-        c.c_id,c.c_name,
-        u.u_id,u.u_username
+        select
+        a.a_id,
+        a.a_title,
+        a.a_content,
+        a.a_keywords,
+        a.a_description,
+        a.a_tags,
+        a.a_titlepic,
+        a.a_lasttime,
+        a.a_clicknum,
+        ca.c_id,
+        ca.c_name,
+        u.u_id,
+        u.u_username,
+        co.co_id,
+        co.co_username,
+        co.co_email,
+        co.co_content,
+        co.co_date
         from tb_article a
-        left join tb_category c on a.a_categoryid = c.c_id
+        left join tb_category ca on a.a_categoryid = ca.c_id
         left join tb_user u on a.a_writerid = u.u_id
+        left join tb_comment co on a.a_id = co.co_belongid
         <where>
             <trim prefixOverrides="and">
-                <if test="id!=null">
-                    and a_id = #{id}
+                <if test="article.id!=null">
+                    and a_id = #{article.id}
                 </if>
-                <if test="writerbean.id!=null and writerbean.role.id==1">
-                    and a_writerid = #{writerbean.id}
+                <if test="article.writerbean.id!=null and article.writerbean.role.id==1">
+                    and a_writerid = #{article.writerbean.id}
+                </if>
+                <if test="type!=null and type!=''">
+                    <if test="type=='tag'">
+                        and a_tags like concat('%',#{value},'%')
+                    </if>
+                    <if test="type=='user'">
+                        and a_writerid = #{value}
+                    </if>
+                    <if test="type=='keyword'">
+                        and a_keywords like concat('%',#{value},'%')
+                    </if>
+                    <if test="type=='category'">
+                        and a_categoryid = #{value}
+                    </if>
                 </if>
             </trim>
         </where>
+        <choose>
+            <when test="flag.getFlag()==2">
+                order by a_clicknum desc
+                limit 0,5
+            </when>
+            <when test="flag.getFlag()==1">
+                order by a_lasttime desc
+            </when>
+        </choose>
     </select>
+
 
     <insert id="insArticle">
         insert
@@ -53,15 +104,38 @@
     <update id="updArticle">
         update tb_article
         set
-        `a_title`=#{title},
-        `a_content`=#{content},
-        `a_keywords`=#{keywords},
-        `a_description`=#{description},
-        `a_categoryid`=#{category},
-        `a_tags`=#{tags},
-        `a_titlepic`=#{titlepic},
-        `a_visibility`=#{visibility},
-        `a_lasttime`=#{lasttime}
+        <trim suffixOverrides=",">
+            <if test="title!=null and title!=''">
+                `a_title`=#{title},
+            </if>
+            <if test="content!=null and content!=''">
+                `a_content`=#{content},
+            </if>
+            <if test="keywords!=null and keywords!=''">
+                `a_keywords`=#{keywords},
+            </if>
+            <if test="description!=null and description!=''">
+                `a_description`=#{description},
+            </if>
+            <if test="category!=null">
+                `a_categoryid`=#{category},
+            </if>
+            <if test="tags!=null and tags!=''">
+                `a_tags`=#{tags},
+            </if>
+            <if test="titlepic!=null and titlepic!=''">
+                `a_titlepic`=#{titlepic},
+            </if>
+            <if test="visibility!=null">
+                `a_visibility`=#{visibility},
+            </if>
+            <if test="lasttime!=null">
+                `a_lasttime`=#{lasttime},
+            </if>
+            <if test="clickNum!=null">
+                `a_clicknum`=#{clickNum},
+            </if>
+        </trim>
         where `a_id`=#{id}
     </update>
 
@@ -83,4 +157,20 @@
         </where>
     </select>
 
+
+    <select id="getPreArticle" resultMap="article">
+        select a_id,a_title
+        from tb_article
+        where a_lasttime>#{article.lasttime}
+        ORDER BY a_lasttime
+        limit 1
+    </select>
+
+    <select id="getNextArticle" resultMap="article">
+        select a_id,a_title
+        from tb_article
+        where a_lasttime &lt; #{article.lasttime}
+        ORDER BY a_lasttime DESC
+        LIMIT 1
+    </select>
 </mapper>

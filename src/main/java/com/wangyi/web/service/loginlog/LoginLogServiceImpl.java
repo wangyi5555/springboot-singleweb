@@ -38,4 +38,10 @@ public class LoginLogServiceImpl implements LoginlogServices {
         }
         return checkbox.length;
     }
+
+    @Override
+    public int insLog(LoginLog loginLog) {
+        return loginLogMapper.insLoginLog(loginLog);
+    }
+
 }

@@ -17,4 +17,6 @@ public interface LoginlogServices {
     int delLogByID(Integer id);
 
     int delByList(Integer[] checkbox);
+
+    int insLog(LoginLog loginLog);
 }

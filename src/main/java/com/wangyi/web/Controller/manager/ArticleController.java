@@ -45,7 +45,7 @@ public class ArticleController {
                                Model model,
                                HttpSession session) {
         User user = (User) session.getAttribute("loginuser");
-        List<Article> articleList = articleService.selArticle(pageNum,user);
+        List<Article> articleList = articleService.selArticle(pageNum,user,5,"","");
         PageInfo<Article> pageInfo = new PageInfo<>(articleList);
         model.addAttribute("pageInfo", pageInfo);
         model.addAttribute("articleList", articleList);

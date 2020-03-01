@@ -16,4 +16,6 @@ public interface LoginLogMapper {
 
     int delLoginLog(Integer id);
 
+    int insLoginLog(LoginLog loginLog);
+
 }

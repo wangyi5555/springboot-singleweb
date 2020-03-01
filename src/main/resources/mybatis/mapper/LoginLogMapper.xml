@@ -38,4 +38,9 @@
             </if>
         </where>
     </delete>
+    <insert id="insLoginLog">
+        insert
+        into tb_loginlog(`l_userid`,`l_lasttime`,`l_ip`,`l_status`)
+        values (#{userid},#{lasttime},#{ip},#{status})
+    </insert>
 </mapper>

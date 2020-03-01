@@ -43,7 +43,7 @@
 
     <select id="selUserWithAll" resultMap="user">
         select
-        u.u_id,u.u_username,u.u_name,u.u_phone,u.u_password,
+        u.u_id,u.u_username,u.u_name,u.u_phone,u.u_password,u.u_isactive,
         l.*,
         r.r_id,r.r_perms
         from tb_user u
@@ -59,6 +59,8 @@
                 </if>
             </trim>
         </where>
+        order by l_lasttime desc
+        limit 0,4
     </select>
 
 
