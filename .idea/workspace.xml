@@ -1,63 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ebec12b-c569-4ee3-9a08-45e4107d41b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/manager/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/webpage/WebPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/Controller/webpage/WebPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/WebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/WebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/compoment/common/ResponseMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/compoment/common/ResponseMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/compoment/realm/UserRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/compoment/realm/UserRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/config/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/dao/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/dao/ArticleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/dao/LoginLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/dao/LoginLogMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/pojo/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/pojo/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/article/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/article/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/article/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/article/ArticleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/loginlog/LoginLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/loginlog/LoginLogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/loginlog/LoginlogServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wangyi/web/service/loginlog/LoginlogServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ArticleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/LoginLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/LoginLogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/common/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/common/common.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manager/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manager/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/webpage/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/webpage/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/webpage/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/webpage/content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/webpage/friendly.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/webpage/friendly.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/webpage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/webpage/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/webpage/readerWall.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/webpage/readerWall.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/webpage/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/webpage/tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wangyi/web/WebApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wangyi/web/WebApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/ArticleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/manager/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/webpage/WebPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/Controller/webpage/WebPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/WebApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/WebApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/compoment/common/ResponseMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/compoment/common/ResponseMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/compoment/realm/UserRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/compoment/realm/UserRealm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/config/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/config/ShiroConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/dao/ArticleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/dao/ArticleMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/dao/LoginLogMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/dao/LoginLogMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/pojo/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/pojo/Article.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/article/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/article/ArticleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/article/ArticleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/article/ArticleServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/loginlog/LoginLogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/loginlog/LoginLogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/loginlog/LoginlogServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wangyi/web/service/loginlog/LoginlogServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/ArticleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/LoginLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/LoginLogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/common/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/common/common.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/manager/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manager/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/webpage/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/webpage/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/webpage/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/webpage/content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/webpage/friendly.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/webpage/friendly.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/webpage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/webpage/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/webpage/readerWall.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/webpage/readerWall.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/webpage/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/webpage/tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wangyi/web/WebApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/wangyi/web/WebApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web.iml" afterDir="false" />
-    </list>
+    <list default="true" id="2ebec12b-c569-4ee3-9a08-45e4107d41b3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -293,6 +237,7 @@
       <workItem from="1582354740467" duration="14747000" />
       <workItem from="1582867614844" duration="71000" />
       <workItem from="1582959471254" duration="923000" />
+      <workItem from="1583029892212" duration="14000" />
     </task>
     <servers />
   </component>

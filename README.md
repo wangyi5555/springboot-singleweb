@@ -1,1 +1,1 @@
-web
+一个基于springboot和themleaf实现的个人博客系统
